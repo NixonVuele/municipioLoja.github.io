@@ -1,3 +1,7 @@
+.contenedor{
+	background-color: #dddddd;
+}
+
 .contenedor .cabeceraPrincipal{
 	grid-area: header;
 	background-color: #A9E206;
@@ -109,7 +113,7 @@
 .cuadro3{
 	grid-area: cuadro;
 	align-items: center;
-	margin-left: 15px;;
+	margin-left: 50px;;
 	margin-bottom: 30px;
 }
 

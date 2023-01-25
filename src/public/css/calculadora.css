@@ -86,28 +86,26 @@ header {
   align-items: center;
 
 
-  background: rgba(194, 159, 83, 0.5);
-  opacity: 0.7; /* Establece un fondo transparente */
-  word-wrap: break-word; /* Asegura que el texto no se salga de la caja */
-  padding: 10px; /* agrega un padding interno */
-  margin: 0; /* Elimina el margen predeterminado */
 }
 
 
-img {
+.image-container img {
   width: 100%; /* Ajusta la imagen al tamaño del contenedor */
   height: 100%; /* Ajusta la imagen al tamaño del contenedor */
   object-fit: cover; /* Asegura que la imagen se ajuste al tamaño del contenedor */
+  filter: brightness(70%);
 }
 
 .titleText{
-  font-family: 'Imprima';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 100%;
-  line-height: 29px;
+
+}
+
+.box h1{
+  width: 75%;
   text-align: center;
-  color: #000000;
+  display: flex;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
 }
 
 .card-title2{
