@@ -1,0 +1,10 @@
+*{
+    margin: 0; /*Quita todos los margenes*/
+    padding: 0 ;/*el contenido tendra cierto espacio del los filos*/
+    box-sizing: border-box; /*para elementos dentro de contener*/
+
+}
+body{
+    font-family: 'Cormorant Garamond', serif;
+    
+}

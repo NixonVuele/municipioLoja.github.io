@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaPrincipal</title>
+    <link rel="stylesheet" href="/css/calculadora.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <%- include("partials/head") %>
+</head>
+<body>
+    <%- include("partials/navigation") %>
+    <div class="image-container" style="width: 100%;">
+        <img  src="/img/slider1Muni.png" alt="imagen">
+        <div class="box">
+            <p class="titleText">ESTADÍSTICA DE INFORMACIÓN AMBIENTAL ECONÓMICA EN GOBIERNOS AUTÓNOMOS DESCENTRALIZADOS MUNICIPALES 2020</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <br>
+        <h1 class="tituloIndicador text-align:center">Seleccionar Indicadores</h1>
+        <br>
+        <div class="row">
+            <!-- contenedor de la primera columna-->
+            <div class="col-sm-6">
+            <div class="col-sm-12" style="margin-top: 1rem;">
+                <div class="card card-custom1">
+                    <div class="card-body">
+                        <div class="custom-box1">
+                            <h5 class="card-title1 m-3" style="padding-top: 1rem;font-weight:bolder; text-align: center;">Indicadores</h5>
+
+                            
+                            <div class="form-check form-switch">
+                                <input style="float:right;" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked" >Gestión Ambiental</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input style="float:right;" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault" >Gestión Económica</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input style="float:right;" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault" >Gestión Social</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input style="float:right;" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault" >Gestión Institucional</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button style="background: rgba(34, 34, 7, 0.75);
+                        border-radius: 20px; border-color: black; margin-bottom: 3rem;margin-top: 3rem;" class="btn btn-primary " type="button">Calcular</button>
+                    </div>
+
+                    <div class="text-center">
+                        <img style="width: 85%;margin-bottom: 2rem;" class="img-fluid" src="/img/calcu.png" alt="Grafica Radial">
+                      </div>
+                      
+                      
+                </div>
+            </div>
+            </div>
+            <!-- Contenido de la segunda columna-->
+            <div class="col-sm-6">
+
+            <!-- Contenedir de la segunda colunna-->
+                <div class="col-sm-12" style="margin-top: 1rem;">
+                    <div class="card card-custom">
+                        <div class="card-body">
+                            <div class="custom-box2" style="display: flex; justify-content: center;"></div>
+                                <h5 class="card-title2 m-3" style="padding-top: 1rem;font-weight:bolder;">Instrucciones y Aclaraciones</h5>
+                                <p class="diccionario text-align:justify " style="margin: 2rem;">
+                                    El concepto de indicador corresponde  a cada Gestión Integral de Residuos Sólidos<br><br>
+
+                                    Modelo de Gestión hace referencia al porcentaje de GAD´s Municipales que cuentan con un Modelo de Gestión<br><br>
+
+                                    Cobertura de servicios de barrido indica los municipios que si constan con calles susceptibles a ser barridas.<br><br>
+
+                                    Gestión integral de residuos sólidos es la proporción de GADs Municipales que han Iniciado o mantienen procesos de Separación en la Fuente.<br><br>
+
+                                    Residuos sólidos Recolectados (Toneladas / día)<br><br>
+
+                                    Disposición final de los residuos sólidos el municipio cuenta con (sitio principal)<br><br>
+
+                                    Recolección Diferenciada de Desechos en Establecimientos de Salud<br><br>
+
+
+                                    Manejo Final de Desechos Sanitarios Generados de Establecimientos de Salud<br><br>
+
+                                    Subsidio de la Gestión Integral de Residuos Sólidos<br><br>
+
+                                    Proporción de Residuos Sólidos Recuperados por los Gads Municipales en las Fases de la Gestión de Residuos Sólidos<br><br>
+
+                                    Producción Per Cápita de Desechos Sólidos (Urbano)<br><br>
+
+                                    Costo Mensual de Residuos Sólidos<br><br>
+
+                                    Cantidad de residuos sólidos depositados en el sitio de Disposición Final, según sitio (principal) de disposición final<br><br>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            
+        </div>
+
+    </div>
+    <%- include("partials/footer") %>
+</body>
+</html>

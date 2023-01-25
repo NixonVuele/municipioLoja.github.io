@@ -1,0 +1,107 @@
+.cont_banner {
+    height: 100vh;
+    /* alto de pantalla movil o lapto*/
+    background-attachment: fixed
+        /*fija*/
+    ;
+    background-position: center;
+    background-repeat: no-repeat;
+    block-size: cover;
+    background-image: url("../img/fondoCiudad.png");
+}
+
+.sombra {
+    position: absolute;
+    /*q sea flotante*/
+    left: 50%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    /*para otro navegador*/
+    -webkit-transform: translate(-50%, -50%);
+    /*otro navegador*/
+    transform: translate(-50%, -50%);
+    /*Se traslade arriba y abajo */
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    margin: auto;
+}
+
+.sombra hr {
+    /**/
+    border-top: 1px solid rgb(255, 255, 255);
+
+}
+
+.sombra h1 {
+    font-size: 6vw;
+    /*redimenciona la letra de grande o pequeña*/
+    margin-bottom: 10px;
+}
+
+.sombra p {
+    font-size: 2vw;
+    /*redimenciona la letra de grande o pequeña*/
+    margin-bottom: 10px;
+}
+
+.cont_banner_link {
+    margin: 15px;
+    position: relative;
+}
+
+.cont_banner_link button {
+    position: relative;
+    display: inline-block;
+    /*q se mantenga en bloques lineales*/
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1px;
+    margin-bottom: 5px;
+    width: 180px;
+    margin-top: 3px;
+    background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 100%);
+
+}
+
+.cont_banner_link button:hover{
+    background-color: #fff;
+    color: #1111;
+}
+.banner_link{
+    opacity: 0;
+    animation: aparecer_arriba 1s;
+    -webkit-animation: aparecer_arriba 1s;
+    animation-fill-mode: forwards;
+}
+
+.banner_link1{
+    opacity: 0;
+    animation: aparecer_arriba 1s;
+    -webkit-animation: aparecer_arriba 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+.banner_link2{
+    opacity: 0;
+    animation: aparecer_arriba 1s;
+    -webkit-animation: aparecer_arriba 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.cont_banner_link1 {
+    margin-left: 135px;
+    position: relative;
+    /*q se mantenga en bloques lineales*/
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1px;
+    margin-bottom: 5px;
+    width: 180px;
+    margin-top: 30px;
+    background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 100%);
+
+
+}

@@ -1,0 +1,210 @@
+
+.contenedor .cabeceraPrincipal{
+	grid-area: header;
+	background-color: #A9E206;
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.contenedor .cabeceraPrincipal nav{
+	display: flex;
+	align-items: center;
+    
+}
+
+.contenedor .cabeceraPrincipal nav a{
+	text-decoration: none;
+	padding: 0 20px;
+	color: #65524D;
+}
+
+.contenedor .sliderPrincipal{
+	grid-area: slider;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor .sliderPrincipal .cuadro{
+	position: absolute;
+	color: #fff;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	width: 100%;
+	font-size: 34px;
+}
+
+
+.contenedor .sliderPrincipal img{
+	width: 100%;
+}
+
+.contenedor .titulo{
+	grid-area: titulo;
+	background-color: #c4dc92;
+	text-align: center;
+	display: grid;
+}
+
+.contenedor .municipios{
+	display: grid;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	width: 100%;
+
+}
+
+.contenedor .municipios h3{
+	grid-row: 1;
+}
+
+.contenedor .municipios select{
+	justify-content: center;
+	background-color: #656552;
+	color: #fff;
+	grid-row: 1;
+	margin: 15px;
+	text-align: center;
+	height: 40px;
+	width: 100px;
+}
+
+.contenedor .municipios select:focus {
+	background-color: rgb(165, 159, 86);
+	text-align: left;
+	height: 40px;
+	width: 100px;
+}
+
+.contenedor .municipios button{
+	grid-row: 2;
+	background-color: #909082;
+	color: #fff;
+	justify-content: center;
+	justify-items: center;
+	margin-left: 100%;
+	width: 200%;
+	border-radius: 25px;
+}
+
+.contenedor .titulo2{
+	grid-area: titulo;
+	background-color: #c4dc92;
+	display: grid;
+	justify-content: space-between;
+}
+
+.contenedor .titulo2 p{
+	grid-column: 1;
+	margin-left: 5rem;
+}
+
+.boton{
+	grid-column: 2;
+	position: relative;
+	top: -20px;
+	margin-right: 2rem;
+	background-color: #488f5f;
+	color: #fff;
+	border-radius: 55px;
+	width: 200px;
+}
+
+.contenedor .centro{
+	display: flex;
+	justify-content: center;
+	margin-top: auto;
+	font-size: 2em; 
+	background: linear-gradient(180deg, rgba(189, 255, 0, 0) -8.97%, rgba(189, 255, 0, 0.6) 26.44%, rgba(189, 255, 0, 0.6) 44.67%, rgba(189, 255, 0, 0.48) 54.05%, rgba(189, 255, 0, 0) 91.03%);
+}
+
+.contenedor .centro2{
+	display: flex;
+	justify-content: center;
+	margin-top: auto;
+	font-size: 1.5em; 
+}
+
+table {
+	width: 80%;
+	border: 1px solid black;
+	margin: 0 auto;
+
+  }
+  th, td {
+	padding:5px;
+	font-size: 1.5em;
+	border: 1px solid black;
+  }
+
+  .color{
+	background-color: #1F754E;
+  }
+
+  .container {
+  width: 100%; /* o cualquier otro ancho */
+  display: grid;
+  justify-content: center;
+  
+}
+
+.container .col-1{
+	background-color: #ffffff;
+	position: absolute;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	margin-top: 30%;
+	margin-left: 30%;
+	border: 2px solid #000000;
+	width: 50%;
+}
+
+.container .col-2{
+	background-color: #ffffff;
+	position: absolute;
+	justify-content: center;
+	justify-items: center;
+	text-align: center;
+	margin-top: 30%;
+	margin-left: 30%;
+	border: 2px solid #000000;
+	width: 50%;
+	opacity: 0.9;
+}
+
+.container .col-1 h3{
+	background-color: #CCCCCC;
+
+}
+
+.container .col-2 h3{
+	background-color: #CCCCCC;
+}
+
+.container .k{
+	grid-column: 1;
+	position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.container .k2{
+	grid-column: 2;
+	position: relative;
+    align-items: center;
+    text-align: center;
+}
+
+.container .k img{
+	border: 2px solid #000000;
+}
+
+.container .k2 img{
+	border: 2px solid #000000;
+}
+
+

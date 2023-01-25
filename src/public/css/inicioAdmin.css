@@ -1,0 +1,120 @@
+* {
+	box-sizing: border-box;
+}
+
+
+
+.navbar {
+	background: linear-gradient(180deg, rgba(169, 226, 6, 0.85) 0%, rgba(99, 172, 27, 0.85) 97.4%);
+	border: 1px solid #000000;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	color: white;
+}
+
+/*container*/
+
+.box {
+	text-align: center;
+	background: rgba(255, 255, 255, 0.6);
+	position: relative;
+	width: 100%;
+	/* responsive width */
+	margin: 1rem;
+	/* center on the page */
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.titul {
+	position: absolute;
+	z-index: 1;
+	/* place on top of the box */
+	font-size: 2em;
+	/* responsive font size */
+	color: #000;
+	/* black text color */
+	text-align: center;
+	/* center the text */
+	top: 50%;
+	/* center vertically */
+	left: 50%;
+	/* center horizontally */
+	transform: translate(-50%, -50%);
+	/* fine-tune the position */
+}
+
+@media only screen and (max-width: 1000px) {
+	.title {
+		font-size: 1.5em;
+		/* adjust font size for smaller screens */
+	}
+}
+
+.fond2 {
+	background: #575757;
+	width: 100%;
+}
+
+.tit1 {
+	background: #000;
+	text-align: center;
+	color: white;
+    padding: 1rem;    
+}
+
+.tit2 {
+	background: #000;
+	padding: 1rem;    
+	text-align: center;
+	color: white;
+}
+
+.tit3 {
+	background: #000;
+	padding: 1rem;    
+	text-align: center;
+	color: white;
+}
+
+.col1 {
+	background: #FFFFFF;
+	position: relative;
+	margin: 1rem;
+	/* center on the page */
+	width: 30%;
+	float: left;
+}
+
+.col2 {
+	position: relative;
+	margin: 1rem;
+	/* center on the page */
+	background: #FFFFFF;
+	width: 30%;
+	float: left;
+}
+
+.col3 {
+	position: relative;
+	margin: 1rem;
+	/* center on the page */
+	background: #FFFFFF;
+	width: 30%;
+	float: left;
+}
+
+.btn1 {
+	margin-top: 1rem;
+	background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 100%);
+	width: 65%;
+	height: 75% ;
+	padding: 0.5rem;
+	margin-left: 3rem;
+}
+.btn2{
+
+	width: 65%;
+	height: 75% ;
+	padding: 0.5rem;
+	margin-left: 3rem;
+}

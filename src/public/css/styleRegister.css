@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedorRegister{
+    background-image: url("../img/fondo.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #C29F53;
+    background-position: center center;
+    background-size: cover;
+    gap: 60px;
+    color: #ffffff;
+}
+
+input{
+    outline: 0;
+    background-color: #D9D9D9;
+    border: 0;
+    margin: 0 0 1px;
+    padding: 15px;
+    box-sizing: border;
+    font-size: 14px;   
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    background-color: white;
+    color: black;
+    max-width: 1000px;
+    padding: 50px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 2), 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.cuadro{
+    outline: 0;
+    background: rgba(169, 226, 6, 0.75);    
+    color: black;
+    width: 100%;
+    border: 0;
+    margin: 0 0 1px;
+    padding: 15px;
+    box-sizing: border;
+    font-size: 14px;  
+}
+
+.form-group .boton{
+    background: rgba(34, 34, 7, 0.5);
+    border-radius: 15px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    width: 50%;
+    border: 0;
+    padding: 15px;
+    color: black;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 55px;
+}
+
+
+.regreso{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    text-align: center;
+
+
+}
+a:hover {
+    cursor: pointer;
+    color: blue;
+}

@@ -1,0 +1,126 @@
+* {
+
+    box-sizing: border-box;
+}
+
+/* Responsive. */
+
+body {
+    background-image: url("../img/fond.png");
+    max-width: 1000%;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    padding-top: 12rem;
+    display: flex;
+    width: 38%;
+    float: right;
+}
+
+
+/*FORM GROUP*/
+.form-group h2 {
+    align-items: center;
+    margin-left: -2rem;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.msg {
+    margin-left: -2rem;
+    margin-right: 16rem;
+    font-size: 9px;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+label.new {
+    align-items: center;
+    margin-left: -2rem;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+label.new1 {
+    align-items: center;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-left: -2rem;
+}
+
+.form-control {
+    background: linear-gradient(180deg, rgba(169, 226, 6, 0.7) 0%, rgba(99, 172, 27, 0.665) 100%);
+    align-items: center;
+    margin-left: -2rem;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    outline: 0;
+    width: 55%;
+    padding: 15px;
+    border-radius: 0rem;
+    border: none;
+
+}
+.form-control1 {
+    background: linear-gradient(180deg, rgba(169, 226, 6, 0.7) 0%, rgba(99, 172, 27, 0.665) 100%);
+    align-items: center;
+    margin-left: -2rem;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    outline: 0;
+    width: 55%;
+    padding: 15px;
+    border-radius: 0rem;
+    border: none;
+
+}
+
+input::placeholder {
+    color: black;
+    font-weight: bold;
+}
+.captcha {
+    margin-left: -3.6rem;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    transform: scale(0.85);
+
+
+}
+
+.form-group .boton {
+    font-family: 'Poppins', sans-serif;
+    background-color: hsl(60, 66%, 8%, 0.5);
+    margin-left: -2rem;
+    font-size: 12px;
+    width: 55%;
+    padding: 10px;
+    border-radius: 0.5rem;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.regreso{
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    margin-right: 20rem;
+
+}
+a:hover {
+    cursor: pointer;
+    color: blue;
+}

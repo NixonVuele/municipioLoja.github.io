@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaginaPrincipal</title>
+    <link rel="stylesheet" href="css/stylePag.css">
+    <%- include("partials/head") %>
+
+</head>
+<body>
+    <%- include("partials/navigation") %>
+    <div class="contenedor">
+        <section class="sliderPrincipal">
+            <div class="cuadro">
+                <h1>MUNICIPIO DE LOJA </h1>
+            </div>
+            <img src="img/LogoMun.png" >      
+        </section>
+        <section class="titulo">
+            <h2>Municipios</h2>
+        </section>
+        <br>
+        <section class="municipios">
+            <h3>Seleccione</h3>
+            <select name="selectMuni" id="municipios">
+                <option value="opcion1">Loja</option>
+                <option value="opcion2">Catamayo</option>
+            </select>
+            <select name="selectAño" id="años">
+                <option value="optionA1">2019</option>
+                <option value="optionA2"></option>
+            </select>
+            <button onclick="location.href='/calculadora'" >IR A INDICADORES</button>
+        </section>
+        <br>
+        <div class="titulo2">
+            <p>Tienes dudas de las gestiones que realiza el municipio</p>
+            <p>Quieres conocer más a detalle sus acciones</p>
+            <button class="boton">VER MÁS</button>
+        </div>
+        <h2 class="centro">ASPECTOS DE LOS GADS MUNICIPALES</h2>
+        <h2 class="centro2">Gestiones de los Gads municipales</h2>
+        <p class="centro2">Una visión general de la acción de cada aspectos</p>
+        <table>
+            <tr>
+              <th class="color">Aspectos</th>
+              <th class="color">Variables Totales</th>
+              <th class="color"></th>
+              <th class="color"></th>
+            </tr>
+            <tr>
+              <td>Económico</td>
+              <td>Por cobro de residuos residencial e industrial </td>
+              <td>De ingresos recibidos </td>
+              <td>Para protección ambiental </td>
+            </tr>
+            <tr>
+              <td>Social</td>
+              <td>Porcentaje recolección parroquias Urbanas</td>
+              <td>Porcentaje recolección parroquias rurales</td>
+              <td>Hectáreas del área urbana del municipio</td>
+            </tr>
+            <tr>
+                <td>Ambiental</td>
+                <td>Total de residuos peligrosos en toneladas</td>
+                <td>Total de residuos orgánicos en toneladas</td>
+                <td>Total de residuos inorgánicos toneladas</td>
+            </tr>
+            <tr>
+                <td>Institucional</td>
+                <td>Gasto de combustible Diesel </td>
+                <td>Gasto de combustible Extra </td>
+                <td>Gasto de combustible Super</td>  
+            </tr>
+          </table>
+          <h2 class="centro">VER ÍNDICE DE GASTOS</h2>
+          <p class="centro2">Visualiza los gastos en cada gestión y descubre donde van tus impuestos</p>
+          <div class="container">
+            <div class="k">
+                <div class="col-1">
+                    <h3>Gastos Municipales globales</h3>
+                    <p>Calcule los gastos de todos los sectores</p>
+                    <br>
+                    <button class="boton"onclick="location.href='/calculadora'" >Empezar el cálculo</button>
+                </div>
+                <img src="../img/SliderMoney.png" alt="Imagen 1">
+            </div>
+            <div class="k2">
+                <div class="col-2">
+                    <h3>Gestiones Municipales </h3>
+                    <p>Calcule los gastos de un sector especifico</p>
+                    <br>
+                    <button class="boton" onclick="location.href='/calculadoraVariables'">Calcular Gastos</button>
+                </div>
+                <img src="../img/SliderDerecha.png" alt="Imagen 2">
+            </div>
+            
+          </div>
+    </div>
+    <%- include("partials/footer") %>
+    
+
+
+</body>
+</html>

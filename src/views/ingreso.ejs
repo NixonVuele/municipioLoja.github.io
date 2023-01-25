@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/insertData.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row justify-content-center align-content-center">
+            <div class="col-8 barra">
+                <img src="/img/logoWhite.svg" style="width: 30%;" alt=""></a>
+            </div>
+            <div class="col-4 text-right barra">
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <a href="#" class="px-3 text-light perfil dropdown-toggle" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
+                                class="fas fa-user-circle user"></i></a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
+                            <a class="dropdown-item menuperfil cerrar" href="#"><i
+                                    class="fas fa-sign-out-alt m-1"></i>Salir
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="barra-lateral cl-12 col-sm-auto">
+                <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
+                    <a href="#"><i class="fas fa-home"></i><span>Inicio</span></a>
+                    <a href="#"><i class="fas fa-home"></i><span>Indicadores</span></a>
+                    <a href="#"><i class="fas fa-home"></i><span>Notificaciones</span></a>
+
+                </nav>
+            </div>
+            <main class="main col">
+                <div class="row justify-content-center align-content-center text-center">
+                    <div class="columna col-lg-12">
+                        CONTENIDO
+                        <form class="row">
+                            <div class="col-lg-4">
+                                <label class="form-label" for="año">Seleccione el año</label>
+                                <select class="form-control" id="año" required>
+                                    <option value="">...</option>
+                                    <option>2011</option>
+                                    <option>2012</option>
+                                    <option>2013</option>
+                                    <option>2014</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="form-label" for="municipio">Seleccione el municipio</label>
+                                <select class="form-control" id="municipio" required>
+                                    <option value="">...</option>
+                                    <option>Loja</option>
+                                    <option>Catamayo</option>
+                                    <option>Malacatos</option>
+                                    <option>Vilcabamba</option>
+                                    <option>Cariamanga</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-4">
+                                <label class="form-label" for="indicador">Seleccione el indicador</label>
+                                <select class="form-control" id="indicador" required>
+                                    <option value="">...</option>
+                                    <option>Ambiental</option>
+                                    <option>Económico</option>
+                                    <option>Institucional</option>
+                                    <option>Social</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <hr size="10px" color="white" />
+                <div class="row justify-content-center align-content-justify ">
+                    <div class="columna col-lg-12">
+                        <form class="row" action="/submit" method="post">
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA1">Área que ocupa los Rellenos Sanitarios</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA1" name="inputA1">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA2">Número de botaderos</label>
+                                <br><br><br>
+                                <input type="number" class="form-control1" id="inputA2" name="inputA2">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA3">Área que ocupa botaderos</label>
+                                <br><br><br>
+                                <input type="number" class="form-control1" id="inputA3">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA4">Total de residuos Recolectados en ton. en el 2012
+                                </label>
+                                <input type="number" class="form-control1" id="inputA4">
+                            </div>
+                            <hr size="20px" color="white" />
+
+
+                            <div class="col-lg-3">
+
+                                <label class="formAmb" for="inputA5">Total de recolección de residuos sólidos en forma
+                                    diferenciada</label>
+                                <input type="number" class="form-control1" id="inputA5">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA6">Total de residuos peligrosos en toneladas</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA6">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA7">Total de residuos orgánicos en ton.</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA7">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA8">Total de residuos inorgánicos ton.</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA8">
+                            </div>
+
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA9">Total de la cantidad tratada de todos los residuos</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA9">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA10">Cantidad de Residuos Urbanos destinados al Reciclaje</label>
+                                <input type="number" class="form-control1" id="inputA10">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA11">Cantidad Total de Residuos Urbanos</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA11">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA12">Total de residuos sólidos y residuos peligrosos tratados</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA12">
+                            </div>
+
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA13">Fuentes de captación de agua (agua superficial volumen)</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA13">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA14">Fuentes de captación de agua (agua subterráneavolumen)</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA14">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA15">Volumen total de las fuentes de captación de agua superficial y subterránea</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA15">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA16">Volumen bruto de agua dulce provisto para el suministro de agua potable m3</label>
+                                <input type="number" class="form-control1" id="inputA16">
+                            </div>
+
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA17">Total del Volumen de agua registrada y distribuida por tipo de ususario</label>
+                                <input type="number" class="form-control1" id="inputA17">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA18">Cantidad total de agua residual recolectada m3</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA18">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA19">Total agua residual y su tratamiento</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA19">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA20">Número de plantas de tratamiento de agua residual</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA20">
+                            </div>
+
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA21">Capacidad del tipo de planta de tratamiento de agua residual</label>
+                                <input type="number" class="form-control1" id="inputA21">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA22">Cantidad total de agua no tratada volumen m3</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA22">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA23">Volumen total de agua tratada vertida</label>
+                                <br><br>
+                                <input type="number" class="form-control1" id="inputA23">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA24">Cantidad de agua residual descargada al sisteme de
+                                    alcantarillado
+                                    m3</label>
+                                <input type="number" class="form-control1" id="inputA24">
+                            </div>
+                            <div class="col-12">
+                                <label class="formAmb1" for="inputA25">Consumo de agua de la institución durante
+                                    2012</label>
+                                <input type="number" class="form-control" id="inputA25">
+                            </div>
+                            <button type="submit" class="btn btn-primary d-block mx-auto">Guardar</button>
+
+                        </form>
+                        <hr size="20px" color="white" />
+                        <br><br>
+                        <br><br>
+
+                    </div>
+
+                </div>
+            </main>
+
+            <div class="columna col-lg-12">
+                <div class="card ">
+                    <div class="card-header">
+                        <h4 class="card-title"> Indicadores Ambientales</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table tablesorter " id="">
+                                <thead class=" text-primary">
+                                    <tr>
+                                        <th>id</th>
+                                        <th>Área que ocupa los Rellenos Sanitarios</th>
+                                        <th>Número de botaderos</th>
+                                        <th>Área que ocupa botaderos</th>
+                                        <th>Total de resisduos Recolectados en ton. en el 2012</th>
+                                        <th>Total de recolección de residuos sólidos en forma diferenciada</th>
+                                        <th>Total de residuos peligrosos en toneladas</th>
+                                        <th>Total de residuos orgánicos en ton.</th>
+                                        <th>Total de residuos inorgánicos ton.</th>
+                                        <th>Total de la cantidad tratada de todos los residuos</th>
+                                        <th>Cantidad de Residuos Urbanos destinados al Reciclaje</th>
+                                        <th>Cantidad Total de Residuos Urbanos</th>
+                                        <th>Total de residuos sólidos y residuos peligrosos tratados</th>
+                                        <th>Fuentes de captación de agua (agua superficial volumen)</th>
+                                        <th>Fuentes de captación de agua (agua subterránea volumen)</th>
+                                        <th>Volumen total de las fuentes de captación de agua superficial y
+                                            subterránea</th>
+                                        <th>Volumen bruto de agua dulce provisto para el suministro de agua
+                                            potable
+                                            m3</th>
+                                        <th>Total del Volumen de agua registrada y distribuida por tipo de
+                                            ususario
+                                        </th>
+                                        <th>Cantidad total de agua residual recolectada m3</th>
+                                        <th>Total agua residual y su tratamiento</th>
+                                        <th>Número de plantas de tratamiento de agua residual</th>
+                                        <th>Capacidad del tipo de planta de tratamiento de agua residual</th>
+                                        <th>Cantidad total de agua no tratada volumen m3</th>
+                                        <th>Volumen total de agua tratada vertida</th>
+                                        <th>Cantidad de agua residual descargada al sisteme de alcantarillado m3
+                                        </th>
+                                        <th class="text-center">Consumo de agua de la institución durante 2012
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td>Otto</td>
+                                        <td class="text-center">Otto</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/646c794df3.js"></script>
+
+</body>
+
+</html>
