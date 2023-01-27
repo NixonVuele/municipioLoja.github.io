@@ -6,43 +6,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="externo/bootstrap/css/bootstrap-grid.min.css">
+
     <!-- BOOTSTRAP 5 CDN -->
-    <link
-rel="stylesheet"
-href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" />
 
-    <link
-href="https://fonts.googleapis.com/icon?family=Material+Icons"
-rel="stylesheet"
-/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
-<!-- ANIMATE.CSS -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <link rel="stylesheet" href="/css/styleLogin.css"/>
-    
+    <!-- ANIMATE.CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="/css/styleLogin.css" />
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="form-group">
-            <H1>Administrador</H1>
-            <input class="user" type="text" name="username" id="usuario" class="form-control" placeholder="Usuario">
-            <br><br><br>
-            <input class="email" type="password" name="password" id="contraseña" class="form-control1" placeholder="Contraseña">
-            <br><br><br>
-            <a class="regreso" href="/recuperarContrasena">¿Ha olvidado su nombre de ususario o contraseña?</a>
-            <br><br>
-            <button id="boton" class="boton"  onclick="location.href='/panelControl'">Iniciar Sesion</button>
+    <section>
+        <div class="container">
+            <div class="form-group">
+                <H1>Administrador</H1>
+                <input class="user" type="text" name="username" id="usuario" class="form-control" placeholder="Usuario">
+                <br><br><br>
+                <input class="email" type="password" name="password" id="contraseña" class="form-control1"
+                    placeholder="Contraseña">
+                <br><br>
+                <a class="regreso" href="/recuperarContrasena">¿Ha olvidado su nombre de ususario o contraseña?</a>
+                <br><br>
+                <button id="boton" class="boton" onclick="location.href='/dashboard'">Iniciar Sesion</button>
 
-            <div class="form-group2">
-                <h3>¿Eres nuevo?</h3>
-                <button class="register" onclick="location.href='/registro'">Registrate</button>
+                <div class="form-group2">
+                    <h5>¿Eres nuevo?</h5>
+                    <button class="my-button" onclick="location.href='/registro'">Registrate</button>
+                </div>
             </div>
         </div>
-    </div>
-
+    </section>
+    <script src="externo/bootstrap/js/jquery.js"></script>
+    <script src="externo/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

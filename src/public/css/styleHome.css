@@ -1,0 +1,55 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poopins',sans-serif;
+}
+
+.container p{
+    text-align: justify;
+}
+.navbar {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar div, .navbar ul{
+    background-color: transparent !important;
+}
+
+.cont_sec_1{
+    padding: 10%;
+}
+
+.cont_sec_1_link{
+    padding: 5%;
+}
+
+.cont_sec_1_link a{
+    width: 200px;
+}
+
+.cont_sec_1 hr{
+    border-top: 1px solid rgba(1, 1,1, 0.3);
+}
+
+.cont_footer{
+    background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 97.4%);
+    padding: 0%;
+    color: #fff;
+    font-family: "Poopins" sans-serif;
+    margin-top: 100px;
+}
+
+.cont_footer a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.cont_img_footer{
+    padding: 5%;
+}
+

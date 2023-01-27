@@ -11,45 +11,52 @@
 
 <body>
     <div class="contenedorRegister">
-        <h1>MUNICIPIO DE LOJA</h1>
         <div class="form-group">
-            <label for="">Nomber completo *</label>
-            <input type="text" name="name" id="nombre" class="form-control">
+            <h1>Syscalc.ec</h1>
+            <label for="">Nombre completo *</label>
+            <input type="text" name="name" id="nombre" class="form-control" placeholder="Apellidos y Nombres">
             <label for="">Dirección de correo electrónico *</label>
-            <input type="email" name="email" id="correo" class="form-control">
+            <input type="email" name="email" id="correo" class="form-control" placeholder="Correo institucional">
             <p>Una dirección de correo electrónico institucional válido. Todos los correos del sistema se enviaran a
                 esta dirección.</p>
             <br>
-            <label for="">Cédula</label>
-            <input type="number" name="cedula" id="cedula" class="form-control">
+            <label for="">Contraseña</label>
+            <input type="number" name="pasdword" id="pasdword" class="form-control" placeholder="*************">
             <br>
             <h2 class="cuadro">Términos y condiciones</h2>
-            <br>
-            <h3>1.- ACEPTACIÓN DEL SERVICIO BOTON DE PAGOS</h3>
-            <p>El Municipio de Loja pone a su disposición la informacion para su analisis y modificación.</p>
-            <h3>2.- MODIFICACIONES</h3>
-            <p>El admin podrá modificar cuantas veces sea necesario la información subida y a su vez se le permitirá la
-                carga de datos al sistema.</p>
-            <h3>3.- CONFIDENCIALIDAD</h3>
-            <p>La utilización del sistema es responsabilidad del usuario la cual se considera como información privada.
-            </p>
-            <h3>4.- POLITICA DE PRIVACIDAD</h3>
-            <p>Por la prestación de este servicio, el municipio de Loja podrá recopilar información de registro,
-                información que pasará a terceros cuando ésta sea
-                requerida por la ley o por acciones legales para las cuales ésta información es relevante, como cuando
-                se trate de una orden judicial o a propósito
-                para prevenir un delito o fraude.</p>
-            <br>
-            <div class="check">
-                <input type="checkbox" name="terms" class="form-control">
-                <label for="terms"><a href="">Estoy de acuerdo con los terminos y condiciones</a></label>
-            </div>
 
             <br>
-            <button id="boton" class="boton" onclick="location.href='/login'">Crear cuenta</button>
-            <p class="regreso">Regresar a:<a href="/">Iniciar Sesión</a></p>
+            <div class="terminos">
+                <h3>1.- ACEPTACIÓN DEL SERVICIO BOTON DE PAGOS</h3>
+                <p>El Municipio de Loja pone a su disposición la informacion para su analisis y modificación.</p>
+                <h3>2.- MODIFICACIONES</h3>
+                <p>El admin podrá modificar cuantas veces sea necesario la información subida y a su vez se le permitirá
+                    la
+                    carga de datos al sistema.</p>
+                <h3>3.- CONFIDENCIALIDAD</h3>
+                <p>La utilización del sistema es responsabilidad del usuario la cual se considera como información
+                    privada.
+                </p>
+                <h3>4.- POLITICA DE PRIVACIDAD</h3>
+                <p>Por la prestación de este servicio, el municipio de Loja podrá recopilar información de registro,
+                    información que pasará a terceros cuando ésta sea
+                    requerida por la ley o por acciones legales para las cuales ésta información es relevante, como
+                    cuando
+                    se trate de una orden judicial o a propósito
+                    para prevenir un delito o fraude.</p>
+                <br>
+                <div class="check">
+                    <input type="checkbox" name="terms" class="form-control" required>
+                    <label for="terms"><a href="">Estoy de acuerdo con los terminos y condiciones</a></label>
+                </div>
+                <div>
+
+                    <br>
+                    <button id="boton" class="boton" onclick="location.href='/login'">Crear cuenta</button>
+                    <p class="regreso">Regresar a:<a href="/">Iniciar Sesión</a></p>
+                </div>
+            </div>
         </div>
-    </div>
 </body>
 
 </html>

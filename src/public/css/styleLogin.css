@@ -1,15 +1,16 @@
-* {
-
-    box-sizing: border-box;
-}
-
 /* Responsive. */
+*{
+    margin: 0; /*Quita todos los margenes*/
+    padding: 0 ;/*el contenido tendra cierto espacio del los filos*/
+    box-sizing: border-box; /*para elementos dentro de contener*/
+
+}
 
 body {
     background-image: url("../img/fond.png");
-    max-width: 1000%;
-    align-items: flex-end;
-    justify-content: flex-end;
+    max-width: 100vw;
+    max-height: 100vw;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -17,29 +18,22 @@ body {
 .container {
     padding-top: 12rem;
     display: flex;
-    width: 38%;
+    width: 40%;
     float: right;
+
 }
 
 
 /*FORM GROUP*/
-.form-group h2 {
+.form-group h1 {
     align-items: center;
-    margin-left: -2rem;
-    font-size: 16px;
+    margin-left: -1rem;
+    font-size: 24px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     margin-bottom: 1rem;
 }
 
-.msg {
-    margin-left: -2rem;
-    margin-right: 4rem;
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    margin-bottom: 1rem;
-    text-align: justify;
-}
 
 .form-group label {
     align-items: center;
@@ -56,7 +50,7 @@ body {
     font-size: 12px;
     font-family: 'Poppins', sans-serif;
     outline: 0;
-    width: 20%;
+    width: 21%;
     padding: 15px;
     position: absolute;
     background: linear-gradient(180deg, rgba(169, 226, 6, 0.7) 0%, rgba(99, 172, 27, 0.665) 100%);
@@ -68,67 +62,79 @@ input::placeholder {
     color: black;
     font-weight: bold;
 }
-.captcha {
-    margin-left: -3.6rem;
-    font-size: 14px;
+
+
+
+.boton {
     font-family: 'Poppins', sans-serif;
-    transform: scale(0.85);
-
-
-}
-
-.form-group .boton {
-    font-family: 'Poppins', sans-serif;
-    outline: 0;
-    background-color: hsl(60, 66%, 8%, 0.6);
-    width: 55%;
+    background-color: hsl(60, 66%, 8%, 0.8);
+    padding: 10px 13px;
+    cursor: pointer;
+    display: block;
     border: 0;
-    padding: 10px;
     color: white;
     font-size: 12px;
-    cursor: pointer;
     align-items: center;
-    margin-left: 2.5rem;
     border-radius: 0.5rem;
-    margin-bottom: 2rem;
+    margin-left: 20%;
+    margin-bottom: 1rem;
+    
 }
 
-.regreso{
-    margin-top: 2rem;
+
+.regreso {
     font-size: 12px;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
     margin-left: -1.5rem;
+    padding: 0 0px 20px;
+    margin-right: 100px;
 }
+
 a:hover {
     cursor: pointer;
 }
 
-.form-group2{
-    position: absolute;
-    background-color: white;
-    color: black;
-    background: rgba(255, 255, 255, 0.5);
+.form-group2 {
+    height: 12%;
+    border-radius: 0.5rem;
     align-items: center;
-    margin-left: -3rem;
-    font-size: 14px;
+    margin-left: -2.5rem;
     font-family: 'Poppins', sans-serif;
     outline: 0;
-    width: 25%;
-    padding: 10px;
-    border-radius: 0.5rem;
-    height: 4rem;
-}
-
-.register{
-    width: 90px;
+    width: 22%;
+    padding: 15px;
     position: absolute;
-    height: 36px;
-    top: 1rem;
-    left: 12rem;
-    cursor: pointer;
-    background: rgba(34, 34, 7, 0.5);
-    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 0;
+    display: flex; /* esto permite usar las propiedades align-items y justify-content */
+    justify-content: center; /* esto centrará el contenido horizontalmente */
+}
+
+.form-group h5 {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 7px 12px;
 }
 
 
+.my-button{
+    padding: 10px 13px;
+    cursor: pointer;
+    content: center;
+    display: block;
+    font-size: 16px;
+    background: linear-gradient(180deg, rgba(169, 226, 6) 0%, rgba(99, 172, 27) 100%);
+    font-family: 'Poppins', sans-serif;
+    border: 0;
+    border-radius: 0.5rem;
+
+
+  }
+  
+  @media screen and (max-width: 600px) {
+    .my-button {
+      font-size: 14px;
+    }
+  
+}

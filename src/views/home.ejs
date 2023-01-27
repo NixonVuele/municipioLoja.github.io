@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portal ciudadano</title>
+    <link rel="stylesheet" href="ext/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/keyframmes.css">
+    <link rel="stylesheet" href="css/banHome.css">
+    <link rel="stylesheet" href="css/styleHome.css">
+    <%- include("partials/head") %>
+
+</head>
+
+<body>
+    <%- include("partials/navigation") %>
+
+        <section>
+            <div class="cont_banner">
+                <div class="sombra">
+                    <h1>Syscalc.ec</h1>
+                    <p>Portal de participación ciudadana</p>
+                    <hr />
+                    <div class="cont_banner_link">
+                        <a class="banner_link" href="/calculadora">Indicadores</a>
+                        <a class="banner_link_1" href="/calculadoraVariables">Variables</a>
+                        <a class="banner_link_2" href="/contactos">Más</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <dvi class="container">
+                <div class="row cont_sec_1">
+                    <div class="col-md-9">
+                        <h2><b>¿Que somos?</b></h2>
+                        <p><i>Un equipo conformado por personal administrativo de los Gad municipales a nivel nacional
+                            </i></p>
+                        <hr />
+                        <p>Institución con un portal web de participación ciudadana trabajo en estrecha colaboración con
+                            los representantes de cada municipio. En esta sección se facilita información relativa a las
+                            personas que componen la ciudadania en general sobre la valoración de componentes
+                            ambientales a nivel provincial</p>
+                        <p>Los sistemas de gestión ambiental son instrumentos con un gran potencial para proteger el
+                            entorno y actuar sobre el impacto ambiental que generan las instituciones municipales.
+                            Bienvenido a la plataforma de evaluación en línea de la gestión ambiental de los municipios
+                            del Ecuador. Estamos orgullosos de presentarle esta herramienta innovadora que le permitirá
+                            evaluar la gestión ambiental de todos los municipios del Ecuador de manera fácil y
+                            eficiente.</p>
+                    </div>
+                    <div class="cont_sec_1_link col-md-3 text-center">
+                        <a data-aos="fade-up" href="#" class="btn btn-secondary btn-md">Visita nuestra página</a>
+                    </div>
+                </div>
+            </dvi>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>¿Que hacemos?</h2>
+                        <p>La plataforma ha sido desarrollada con el objetivo de proporcionar una evaluación sistemática
+                            y objetiva de la gestión ambiental de los municipios. Para ello, se ha creado un índice
+                            sistémico que involucra los aspectos ambientales, económicos, sociales e institucionales.
+                            Este índice se basa en un conjunto de indicadores específicos que proporcionan una línea
+                            base sobre el estado actual de los gobiernos seccionales. Con esta información, se pueden
+                            evaluar las alternativas de decisión pública y tomar decisiones informadas para mejorar la
+                            gestión ambiental en los municipios.</p>
+                        <a href="#"><i class="icon-linkedin"></i></a>
+                        <a href=""><i class="icon-twitter"></i></a>
+                    </div>
+
+                    <div class="col-md-6">
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/DI05KAGwUKk"
+                            title="Horarios de recolección de basura" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="cont_banner_sec_3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4 cont_img  text-center">
+                            <div>
+                                <h3>Municipio</h3>
+                                <select name="selectMuni" id="municipios">
+                                    <option>...</option>
+                                    <option value="opcion1">Loja</option>
+                                    <option value="opcion2">Puerto baquerizo</option>
+                                </select>
+                            </div>
+                            <br>
+                            <hr />
+                            <div>
+                                <h3>Año</h3>
+                                <select name="selectAño" id="año">
+                                    <option>...</option>
+                                    <option value="optionA1">2019</option>
+                                    <option value="optionA2">2019</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4 cont_img center-img text-center">
+                            <h2>Indicadores</h2>
+                            <p>Componentes económico, social, ambiental e institucional que miden la gestión ambiental.
+                            </p>
+                            <img src="../img/SliderMoney.png" style="width:150px;height:150px; " alt="Imagen 1">
+                            <a class="btn btn-secondary btn-md" href="/calculadora">Ver indicadores</a>
+                        </div>
+                        <div class="col-md-4 cont_img center-img text-center">
+                            <h2>Variables</h2>
+                            <p>Factores que inciden en los componentes y precisar la medida de la gestión ambiental.</p>
+                            <img src="../img/SliderDerecha.png" style="width:150px;height:150px; " alt="Imagen 1">
+                            <a class="btn btn-secondary btn-md" href="/calculadoraVariables">Ver variables</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-md-12">
+                        <h3 class="tit text-center"> Valoración del componente ambiental provincial</h3>
+                        <br><br>
+                        <hr />
+                        <table class="table table-dark table-responsive">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Escala</th>
+                                    <th>Valor (P)</th>
+                                    <th>Criterio de valoración</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Nivel óptimo</td>
+                                    <td>≥0,75- 1,00</td>
+                                    <td>Considerado idóneo para alcanzar la sustentibilidad de la institución</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Nivel estable</td>
+                                    <td>≥0,50 < 0,75</td>
+                                    <td>Considerada la aceptable o limitaado para alcanzar la sustentibilidad de la
+                                        institución</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Nivel inestable</td>
+                                    <td>≥0,25 > 0,50</td>
+                                    <td>Considerado incompatible para alcanzar la sustentibilidad de la institución</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Nivel crítico</td>
+                                    <td>
+                                        < 0.25 - 0 </td>
+                                    <td>Considerado inaceptable para alcanzar la sustentibilidad de la institución</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <br><br>
+                <h3 class="tit text-center">Facilitadores de datos</h3>
+                <br><br>
+                <hr />
+
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <img data-aos="fade-left" src="../img/inec.png" style="width:320px;height:150px;"
+                            class="img-fluid" alt="diseño arquitectonico">
+                        <a href="https://www.ecuadorencifras.gob.ec/institucional/home/">Instituto Nacional de
+                            Estadística y Censos</a>
+                    </div>
+                    <div class="col-md-4">
+                        <img data-aos="fade-up-right" src="../img/bde.png" style="width:320px;height:150px;" class="
+                            img-fluid" alt="diseño arquitectonico">
+                        <a href="https://bde.fin.ec/">Banco de Desarrollo del Ecuador B.P</a>
+                    </div>
+                    <div class="col-md-4">
+                        <img data-aos="fade-up-left" src="../img/ame.png" style="width:320px;height:150px;" class="
+                            img-fluid" alt="diseño arquitectonico">
+                        <a href="https://ame.gob.ec/">Asociación de Municipalidades Ecuatorianas</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <%- include("partials/footer") %>
+
+            <script src="ext/bootstrap/js/jquery.js"></script>
+            <script src="ext/bootstrap/js/bootstrap.min.js"></script>
+            <script src="ext/aos.js"> </script>
+            <script src="js/index.js"></script>
+</body>
+
+</html>

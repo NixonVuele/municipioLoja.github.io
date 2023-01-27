@@ -1,0 +1,190 @@
+body {
+    background: #262a34;
+
+}
+
+.barra {
+    background: #262a34;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0;
+}
+
+.dropdown-menu {
+    margin: 17px;
+    background: #262a34;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 568);
+}
+
+.menuperfil {
+    color: white;
+
+}
+
+.menuperfil:focus {
+	background: linear-gradient(180deg, rgba(169, 226, 6, 0.85) 0%, rgba(99, 172, 27, 0.85) 97.4%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 568);
+}
+
+.cerrar:hover {
+    background-color: rgba(255, 0, 0, 0.474);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 568);
+}
+
+.user {
+    font-size: 35px;
+}
+
+/*BARRA LATERAL*/
+
+.barra-lateral {
+	background: linear-gradient(180deg, rgba(169, 226, 6, 0.85) 0%, rgba(99, 172, 27, 0.85) 97.4%);
+    color: rgb(255, 255, 255);
+    min-width: 250px;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.barra-lateral a {
+    color: rgb(0, 0, 0);
+
+}
+
+/*Estilos del menu*/
+
+.barra-lateral .menu a {
+    display: block;
+    padding: 20px;
+    font-family: Roboto, san-serif;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+
+.barra-lateral .menu a:hover {
+    background-color: #003C5D;
+    text-decoration: none;
+}
+
+.active {
+    background: #003C5D;
+}
+
+.barra-lateral .menu {
+    border-top: 1px solid white;
+}
+
+.barra-lateral .menu a i {
+    margin-right: 20px;
+}
+
+/*MAIN*/
+.main {
+    padding-top: 40px;
+}
+
+.main .columna {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/*MEDIA QUERY adapta un contenido a modoa movil o responsive*/
+@media screen and (max-width:1300px) {
+    .barra-lateral {
+        min-width: auto;
+    }
+
+    .barra-lateral .menu a span {
+        display: none;
+    }
+
+    .barra-lateral .menu a i {
+        margin: 0;
+    }
+    .barra{
+        min-width: auto;
+    }
+    .dropdown-menu{
+        margin: 20px -79px 0px;
+    }
+}
+ menu{
+    border-top: 5px solid white;
+ }
+
+
+
+ @media screen and (max-width:575px) {
+    .barra-lateral {
+        height:  auto;
+    }
+
+    .barra-lateral .menu a span {
+        display: none;
+    }
+
+    .barra-lateral .menu a  {
+        display:inline-block;
+        border-bottom: none;
+    }
+
+    .dropdown-menu{
+        margin: 20px -78px 0px;
+    }
+    body{
+        font-size: 16px;
+        overflow: visible;
+        
+    }
+}
+
+/*CONTENIDO*/
+.main{
+    border-top: 1px solid white;
+}
+.main .form-label{
+    border-top: 1rem;
+    margin-bottom: 0 auto;
+    color: #fff;
+}
+
+.main .form-control{
+    margin-bottom: 30px;
+}
+
+.main .formAmb{
+    width: 13rem;
+    border-top: 5px;
+    color: #fff;
+    margin: 0.5rem;
+}
+
+.main .formAmb1{
+    border-top: 5px;
+    color: #fff;
+    margin: 0.5rem;
+}
+
+.main .form-control1{
+    width: 13rem;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+}
+
+.btn{
+    width: 13rem;
+	background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 100%);
+    border: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
