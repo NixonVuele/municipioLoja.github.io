@@ -1,0 +1,264 @@
+/*CONTENEDOR FONDO*/
+
+.cont_banner_sec_3 {
+    height: 170vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/fondContactos.jpg");
+    position: relative;
+    padding-top: 15%;
+    padding-bottom: -10%;
+    margin-top: 100px;
+}
+
+/*---SECTION 1*/
+
+.cont_sec_1{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+}
+
+.cont_sec_1_link{
+    padding: 5%;
+}
+
+.cont_sec_1_link a{
+    width: 200px;
+}
+
+.cont_sec_1 hr{
+    border-top: 1px solid rgba(1, 1,1, 0.3);
+}
+
+/*---SECTION 2*/
+.container p {
+    text-align: justify;
+}
+
+.container h1 {
+    font-size: 30px;
+    font-family: "Poopins" sans-serif;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+
+.cont_banner_sec_3 .row {
+    padding: 3%;
+    background-color: #fff;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0), 0 5px 5px 0 rgba(0, 0, 0);
+
+}
+
+/*Estilo columnas*/
+.cont_img{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding-bottom: -40px;
+    height: 50vh;
+
+}
+.cont_img1{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding-bottom: -10px;
+    height: 50vh;
+
+
+}
+.cont_img2{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding-bottom: -10px;
+    height: 50vh;
+
+
+}
+.cont_img h1{
+    text-align: center;
+}
+.cont_img p{
+    text-align: center;
+    align-items: center;
+}
+
+.cont_img1 h1{
+    text-align: center;
+}
+.cont_img1 p{
+    text-align: center;
+    align-items: center;
+}
+
+.cont_img2 h1{
+    text-align: center;
+}
+.cont_img2 p{
+    text-align: center;
+    align-items: center;
+}
+.lily {
+    height: 50%;
+    width: 40%;
+    border-radius: 50%;
+    border: 0.4vh solid #18c240;
+}
+ .nixon {
+    height: 50%;
+    width: 40%;
+    border-radius: 50%;
+    border: 0.4vh solid #18c240;
+
+}
+.jhoel {
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    border: 0.4vh solid #18c240;
+
+}
+
+
+
+.lily:hover {
+    filter: grayscale(80%);
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.nixon:hover {
+    filter: grayscale(80%);
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+}
+
+.jhoel:hover {
+    filter: grayscale(80%);
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+
+}
+
+/*---LILY----*/
+.cont_img::after {
+    content: "Quiero que tu web tenga un nosequé y un queseyó que yoquesé...";
+    color: rgb(193, 50, 50);
+    opacity: 0;
+}
+
+.cont_img:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cont_img:hover {
+    box-shadow: 0 0 1vh 1vh rgba(0, 255, 0, 0.863);
+    transition: all 0.4s ease-in-out;
+    background: aqua;
+
+
+}
+
+/*---NIXON----*/
+
+.cont_img1::after {
+    content: "Siempre con ganas. Siempre con ilusión. Siempre hacia delante.";
+    color: rgb(0, 0, 0);
+    opacity: 0;
+}
+
+.cont_img1:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cont_img1:hover {
+    box-shadow: 0 0 1vh 1vh rgba(0, 255, 0, 0.863);
+    transition: all 0.4s ease-in-out;
+    background: aqua;
+
+}
+
+/*---JHOEL----*/
+
+.cont_img2::after {
+    content: "Construyendo un mañana desde cada decisión de hoy";
+    color: rgb(193, 50, 50);
+    opacity: 0;
+}
+
+.cont_img2:hover::after {
+    visibility: visible;
+    opacity: 1;
+}
+
+.cont_img2:hover {
+    box-shadow: 0 0 1vh 1vh rgba(0, 255, 0, 0.863);
+    background: aqua;
+}
+
+
+
+.cont_footer{
+    background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 97.4%);
+    padding: 0%;
+    color: #fff;
+    font-family: "Poopins" sans-serif;
+    margin-top: 100px;
+}
+
+.cont_footer a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.cont_img_footer{
+    padding: 5%;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        background-size: cover;
+        background-position: center;
+    }
+    .cont_fondo{
+        height: 140vh;
+    }
+    .container p {
+        font-size: 12px;
+        text-align: justify;
+    }
+    .container h1 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .cont_banner_sec_3 {
+        height: 140vh;
+    }
+    .lily{
+        padding-bottom: -40px;
+        height: 20vh;
+    }
+    .nixon{
+        padding-bottom: -40px;
+        height: 20vh;
+    }
+    .jhoel{
+        padding-bottom: -40px;
+        height: 20vh;
+    }
+}
