@@ -23,22 +23,24 @@
 <body>
     <section>
         <div class="container">
-            <div class="form-group">
+            <form class="form-group" id="form-group" action="/login">
                 <H1>Administrador</H1>
-                <input class="user" type="text" name="username" id="usuario" class="form-control" placeholder="Usuario">
+                <input class="email" type="text" name="email" id="email" class="form-control" placeholder="Email"
+                    required>
                 <br><br><br>
-                <input class="email" type="password" name="password" id="contraseña" class="form-control1"
-                    placeholder="Contraseña">
+                <input class="password" type="password" name="password" id="password" class="form-control1"
+                    placeholder="Contraseña" required>
                 <br><br>
                 <a class="regreso" href="/recuperarContrasena">¿Ha olvidado su nombre de ususario o contraseña?</a>
                 <br><br>
-                <button id="boton" class="boton" onclick="location.href='/dashboard'">Iniciar Sesion</button>
+                <button type="submit" id="boton" class="boton">Iniciar Sesion</button>
 
                 <div class="form-group2">
                     <h5>¿Eres nuevo?</h5>
                     <button class="my-button" onclick="location.href='/registro'">Registrate</button>
                 </div>
-            </div>
+            </form>
+
         </div>
     </section>
     <script src="externo/bootstrap/js/jquery.js"></script>

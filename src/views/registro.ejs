@@ -11,18 +11,34 @@
 
 <body>
     <div class="contenedorRegister">
-        <div class="form-group">
+        <form class="form-group" action="/login"  onsubmit="return validatePassword()">
             <h1>Syscalc.ec</h1>
-            <label for="">Nombre completo *</label>
-            <input type="text" name="name" id="nombre" class="form-control" placeholder="Apellidos y Nombres">
-            <label for="">Dirección de correo electrónico *</label>
-            <input type="email" name="email" id="correo" class="form-control" placeholder="Correo institucional">
+            <label for="" aria-required="true">Nombre completo </label>
+            <input type="text" name="name" id="nombre" class="form-control" placeholder="Apellidos y Nombres" required>
+            <label for="">Dirección de correo electrónico</label>
+            <input type="email" name="email" id="correo" class="form-control" placeholder="Correo institucional"
+                required>
             <p>Una dirección de correo electrónico institucional válido. Todos los correos del sistema se enviaran a
                 esta dirección.</p>
             <br>
             <label for="">Contraseña</label>
-            <input type="number" name="pasdword" id="pasdword" class="form-control" placeholder="*************">
+            <input type="password" name="password" id="password" class="form-control" placeholder="*************"
+                required>
+            <script>
+                function validatePassword() {
+                    const password = document.getElementById("password").value;
+                    const passwordRegex = new RegExp(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/);
+                    const isValid = passwordRegex.test(password);
+                    if (!isValid) {
+                        alert("La contraseña debe tener al menos 8 caracteres, una mayúscula, una minúscula y al menos 2 caracteres especiales");
+                        return false;
+
+                    }
+                }
+
+            </script>
             <br>
+
             <h2 class="cuadro">Términos y condiciones</h2>
 
             <br>
@@ -47,16 +63,29 @@
                 <br>
                 <div class="check">
                     <input type="checkbox" name="terms" class="form-control" required>
-                    <label for="terms"><a href="">Estoy de acuerdo con los terminos y condiciones</a></label>
+                    <label for="terms"><a>Estoy de acuerdo con los terminos y condiciones</a></label>
+
+                    <!--    VERIFICA SI ACEPTA LOS TERMINOS-->
+
+                    <script>
+                        document.getElementById("boton").onclick = function () {
+                            if (!document.getElementById("terms").checked) {
+                                alert("Debe aceptar los términos y condiciones para continuar.");
+                                return false; // para evitar el envio del formulario
+                            }
+                        }
+                    </script>
+
                 </div>
                 <div>
 
                     <br>
-                    <button id="boton" class="boton" onclick="location.href='/login'">Crear cuenta</button>
-                    <p class="regreso">Regresar a:<a href="/">Iniciar Sesión</a></p>
+                    <button type="submit" id="boton" class="boton" onsubmit="validatePassword()">Crear cuenta</button>
+                    <p class="regreso">Regresar a:<a href="/login">Iniciar Sesión</a></p>
                 </div>
             </div>
-        </div>
+        </form>
+    </div>
 </body>
 
 </html>

@@ -111,7 +111,3 @@ input::placeholder {
     text-decoration: none;
     text-align: center;
 }
-a:hover {
-    cursor: pointer;
-    color: blue;
-}

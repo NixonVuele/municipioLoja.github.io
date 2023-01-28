@@ -34,13 +34,17 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
                                 class="fas fa-user-circle user"></i></a>
 
+
                         <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
                             <a class="dropdown-item menuperfil cerrar" href="/perfil">
                                 <i class="fas fa-user"></i>Perfil</a>
                             <a class="dropdown-item menuperfil cerrar" href="/configuracion">
                                 <i class="fas fa-user-edit"></i>Configuración</a>
+                            <a class="dropdown-item menuperfil cerrar" href="/home">
+                                <i class="fas fa-home"></i>Visualizar Invitado</a>
                             <a class="dropdown-item menuperfil cerrar" href="/Login">
                                 <i class="fas fa-sign-out-alt m-1"></i>Salir</a>
+
                         </div>
                     </li>
                 </ul>
@@ -51,14 +55,12 @@
         <div class="row ">
             <div class="barra-lateral cl-12 col-sm-auto">
                 <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
-                    <a href="dashboard"><i class="fas fa-house-user"></i><span>Panel de control</span></a>
-                    <a href="panelEconomico"><i class="fas fa-coins"></i><span>Indicador Económico</span></a>
-                    <a href="panelAmbiental"><i class="fab fa-battle-net"></i><span>Indicador Ambiental</span></a>
-                    <!--fas fa-fan-->
-                    <a href="panelSocial"><i class="fas fa-globe"></i><span>Indicador Social</span></a>
-                    <a href="panelInstitucional"><i class="fas fa-university"></i><span>Indicador
-                            Institucional</span></a>
-                    <a href="#"><i class="fas fa-bell"></i><span>Notificaciones</span></a>
+                    <a href="dashboard"><i class="fas fa-home"></i><span>Panel de control</span></a>
+                    <a href="panelEconomico"><i class="fas fa-home"></i><span>Indicador Económico</span></a>
+                    <a href="panelAmbiental"><i class="fas fa-home"></i><span>Indicador Ambiental</span></a>
+                    <a href="panelSocial"><i class="fas fa-home"></i><span>Indicador Social</span></a>
+                    <a href="panelInstitucional"><i class="fas fa-home"></i><span>Indicador Institucional</span></a>
+                    <a href="#"><i class="fas fa-home"></i><span>Notificaciones</span></a>
 
                 </nav>
             </div>
@@ -107,80 +109,80 @@
 
                         <!--FORMULARIO-->
 
-                        <form class="row formulario" action="/submit" method="post">
+                        <form class="row formulario" action="/panelInstitucional" method="post">
 
                             <!--Fila 1-->
 
                             <div class="col-lg-3">
-                                <label class="formAmb" for="inputA1">Funcionarios que trabajan tiempo completo</label>
+                                <label class="formInst"  for="inputI1">Funcionarios que trabajan tiempo completo</label>
                                 <br><br><br>
-                                <input type="number" class="form-control1" id="inputA1" name="inputA1" value="8787">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI1" name="inputI1" value="8787">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb" for="inputA2">Cobertura en km que cubre el servicio de barrido de
+                                <label class="formInst"  for="inputI2">Cobertura en km que cubre el servicio de barrido de
                                     las zonas públicas</label>
                                 <br><br>
-                                <input type="number" class="form-control1" id="inputA2" name="inputA2">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI2" name="inputI2">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb" for="inputA3">Número de personas dedicadas al servicio de
+                                <label class="formInst"  for="inputI3">Número de personas dedicadas al servicio de
                                     barrido</label>
                                 <br><br>
-                                <input type="number" class="form-control1" id="inputA3">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI3" name="inputI3">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb" for="inputA4">Número total de empleados que laboraron en trabajo
+                                <label class="formInst"  for="inputI4">Número total de empleados que laboraron en trabajo
                                     exclusivo en gestión ambiental</label>
-                                <input type="number" class="form-control1" id="inputA4">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI4" name="inputI4">
                             </div>
 
                             <!--Fila 2-->
 
                             <div class="col-lg-3">
-                                <label class="formAmb" for="inputA5">Consumo de energía eléctrica 2012(KWH y valor)
+                                <label class="formInst"  for="inputI5">Consumo de energía eléctrica 2012(KWH y valor)
                                 </label>
                                 <br><br>
-                                <input type="number" class="form-control1" id="inputA5">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI5" name="inputI5">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb" for="inputA6">Consumo de energía eléctrica 2012(KWH y valor)
+                                <label class="formInst"  for="inputI6">Consumo de energía eléctrica 2012(KWH y valor)
                                     valor</label>
-                                <input type="number" class="form-control1" id="inputA6">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI6" name="inputI6">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb" for="inputA7">Cantidad de combustible que utilizó la institución:
+                                <label class="formInst"  for="inputI7">Cantidad de combustible que utilizó la institución:
                                     Diesel</label>
                                 <br><br>
-                                <input type="number" class="form-control1" id="inputA7">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI7" name="inputI7">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb" for="inputA8">Cantidad de combustible que utilizó la institución:
+                                <label class="formInst"  for="inputI8">Cantidad de combustible que utilizó la institución:
                                     Extra</label>
                                 <br><br>
-                                <input type="number" class="form-control1" id="inputA8">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI8" name="inputI8">
                             </div>
 
                             <!--Fila 3-->
 
-                            <div class="col-lg-4">
-                                <label class="formAmb" for="inputA9">Cantidad de combustible que utilizó la institución:
+                            <div class="col-lg-4 text-center">
+                                <label class="formInst"  for="inputI9">Cantidad de combustible que utilizó la institución:
                                     Super</label>
                                 <br><br>
-                                <input type="number" class="form-control1" id="inputA9">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI9" name="inputI9">
                             </div>
-                            <div class="col-lg-4">
-                                <label class="formAmb" for="inputA10">Número de productos maderables que adquirio la
+                            <div class="col-lg-4  text-center">
+                                <label class="formInst"  for="inputI10">Número de productos maderables que adquirio la
                                     institución: Papel</label>
-                                <input type="number" class="form-control1" id="inputA10">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI10" name="inputI10">
                             </div>
-                            <div class="col-lg-4">
-                                <label class="formAmb" for="inputA11">Total de los cortes del servicio de agua potable
+                            <div class="col-lg-4  text-center">
+                                <label class="formInst"  for="inputI11">Total de los cortes del servicio de agua potable
                                     en el mes</label>
                                 <br>
-                                <input type="number" class="form-control1" id="inputA11">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI11" name="inputI11">
+                            </div>
 
-                                <button type="submit" class="btn btn-primary d-block mx-auto"
-                                    onclick="location.href='/ingreso'">Guardar</button>
+                            <button type="submit" class="btn btn-primary d-block mx-auto">Guardar</button>
 
                         </form>
                         <hr size="20px" color="white" />
@@ -206,16 +208,24 @@
                                             <tr>
                                                 <th scope="col">id</th>
                                                 <th scope="col">Funcionarios que trabajan tiempo completo</th>
-                                                <th scope="col">Cobertura en km que cubre el servicio de barrido de las zonas públicas</th>
+                                                <th scope="col">Cobertura en km que cubre el servicio de barrido de las
+                                                    zonas públicas</th>
                                                 <th scope="col">Número de personas dedicadas al servicio de barrido</th>
-                                                <th scope="col">Número total de empleados que laboraron en trabajo exclusivo en gestión ambiental</th>
+                                                <th scope="col">Número total de empleados que laboraron en trabajo
+                                                    exclusivo en gestión ambiental</th>
                                                 <th scope="col">Consumo de energía eléctrica 2012(KWH y valor)</th>
-                                                <th scope="col">Consumo de energía eléctrica 2012(KWH y valor) valor</th>
-                                                <th scope="col">Cantidad de combustible que utilizó la institución: Diesel</th>
-                                                <th scope="col">Cantidad de combustible que utilizó la institución: Extra</th>
-                                                <th scope="col">Cantidad de combustible que utilizó la institución: Super</th>
-                                                <th scope="col">Número de productos maderables que adquirio la institución: Papel</th>
-                                                <th scope="col">Total de los cortes del servicio de agua potable en el mes</th>
+                                                <th scope="col">Consumo de energía eléctrica 2012(KWH y valor) valor
+                                                </th>
+                                                <th scope="col">Cantidad de combustible que utilizó la institución:
+                                                    Diesel</th>
+                                                <th scope="col">Cantidad de combustible que utilizó la institución:
+                                                    Extra</th>
+                                                <th scope="col">Cantidad de combustible que utilizó la institución:
+                                                    Super</th>
+                                                <th scope="col">Número de productos maderables que adquirio la
+                                                    institución: Papel</th>
+                                                <th scope="col">Total de los cortes del servicio de agua potable en el
+                                                    mes</th>
                                                 <th>action</th>
                                             </tr>
                                         </thead>
