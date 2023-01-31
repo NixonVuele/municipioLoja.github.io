@@ -50,22 +50,88 @@ router.get("/panelInstitucional", (req, res) => {
   res.render("panelInstitucional", { title: "Panel Institucional" });
 });
 
+router.post("/register", (req, res) => {
+  
+  const { name, email, password } = req.body;
+
+  console.log(name, email, password);
+  // Hashea la contraseña antes de guardarla en la base de datos
+  const hashedPassword = bcrypt.hashSync(password, 10);
+
+  // Crea una consulta para insertar los datos en la tabla
+  const query = `INSERT INTO usuarios (name, email, contrasena) VALUES ('${name}', '${email}', '${hashedPassword}')`;
+  
+  // Ejecuta la consulta
+  connection.query(query, (error, results) => {
+      if (error) {
+        console.log(error)
+      } else {
+        console.log("todo esta bien :)");
+      }
+  });
+  res.redirect("/login")
+  });
+
 
 /** INGRESO LOGIN*/
-router.post('/login', (req, res) => {
-  const { username, password } = req.body;
+router.post("/login", (req, res) => {
 
-  // Aqui verifica si el usuario y contraseña son correctos
-  if (username === "lili" && password === "1234") {
-    //Redirige al dashboard
-    res.redirect("/dashboard");
-  } else {
-    // Envía un mensaje de error al cliente
-    res.status(401).send('Nombre de usuario o contraseña incorrectos');
+  const { email, password } = req.body;
+
+  const query = `SELECT * FROM usuarios WHERE email = '${email}'`;
+
+  connection.query(query, (error, results) => {
+    if (error) {
+      console.log(error);
+    } else {
+      if (results.length > 0) {
+        const user = results[0];
+
+        const isPasswordValid = bcrypt.compareSync(password, user.contrasena);
+        if (isPasswordValid) {
+          res.redirect("/dashboard");
+        } else {
+          res.send("Contraseña incorrecta");
+        }
+      } else {
+        res.send("Usuario no encontrado");
+      }
+    }
+  });
+});
+
+router.post("/reset", (req, res) => {
+  
+  const {email} = req.body;
+  // Validar el correo electrónico
+  if (!validateEmail(email)) {
+    return res.status(400).send('El correo electrónico no es válido');
   }
+
+  // Buscar el usuario con ese correo electrónico en la base de datos
+  connection.query(`SELECT * FROM usuarios WHERE email = '${email}'`, (err, result) => {
+  if (err) {
+      return res.status(500).send('Error al buscar el usuario en la base de datos');
+  }
+
+  if (result.length === 0) {
+      return res.status(404).send('No se ha encontrado un usuario con ese correo electrónico');
+  } 
+
+  res.redirect("/login")
 });
 
 
+function validateEmail(email) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+
+function generateToken() {
+    // Aquí podrías usar una librería como crypto para generar un token único
+    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+}     
+});
 
 
 
@@ -146,22 +212,6 @@ router.post("/panelSocial", (req, res) => {
   console.log("Se guardo Ind social")
   console.log(listaSoc)
   res.redirect("/panelSocial")
-});
-
-/*AUTENTICACION D ELOGIN */
-
-router.post('/login', (req, res) => {
-  const email = req.body.email;
-  const password = req.body.password;
-  // Aqui verifica si el usuario y contraseña son correctos
-  if (email === "llpuchaicela@gmail.com" && password === "1234") {
-    //Redirige al dashboard
-    console.log("datos correctos")
-    res.redirect("/dashboard");
-  } else {
-    // Envía un mensaje de error al cliente
-    res.status(401).send('Email o contraseña incorrectos');
-  }
 });
 
 /**-------------------------- REGISTRO----------NO VALE AUN------------------------ */
