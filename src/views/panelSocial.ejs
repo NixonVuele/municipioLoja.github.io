@@ -12,11 +12,11 @@
     <!-- DATA TABLE -->
 
     <script type="text/javascript">
-	    $(document).ready(function() {
-	        //Asegurate que el id que le diste a la tabla sea igual al texto despues del simbolo #
-	        $('#userList').DataTable();
-	    } );
-	</script>
+        $(document).ready(function () {
+            //Asegurate que el id que le diste a la tabla sea igual al texto despues del simbolo #
+            $('#userList').DataTable();
+        });
+    </script>
 
 </head>
 
@@ -35,7 +35,7 @@
                                 class="fas fa-user-circle user"></i></a>
 
                         <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
-                            <a class="dropdown-item menuperfil cerrar" href="/perfil">
+                            <a class="dropdown-item menuperfil cerrar" href="/profile">
                                 <i class="fas fa-user"></i>Perfil</a>
                             <a class="dropdown-item menuperfil cerrar" href="/configuracion">
                                 <i class="fas fa-user-edit"></i>Configuración</a>
@@ -46,58 +46,23 @@
                 </ul>
             </div>
         </div>
-    </div> 
+    </div>
     <div class="container-fluid">
         <div class="row ">
             <div class="barra-lateral cl-12 col-sm-auto">
                 <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
                     <a href="dashboard"><i class="fas fa-house-user"></i><span>Panel de control</span></a>
                     <a href="panelEconomico"><i class="fas fa-coins"></i><span>Indicador Económico</span></a>
-                    <a href="panelAmbiental"><i class="fab fa-battle-net"></i><span>Indicador Ambiental</span></a>    <!--fas fa-fan-->
+                    <a href="panelAmbiental"><i class="fab fa-battle-net"></i><span>Indicador Ambiental</span></a>
+                    <!--fas fa-fan-->
                     <a href="panelSocial"><i class="fas fa-globe"></i><span>Indicador Social</span></a>
-                    <a href="panelInstitucional"><i class="fas fa-university"></i><span>Indicador Institucional</span></a>
-                    <a href="#"><i class="fas fa-bell"></i><span>Notificaciones</span></a>
-
+                    <a href="panelInstitucional"><i class="fas fa-university"></i><span>Indicador
+                            Institucional</span></a>
                 </nav>
             </div>
             <main class="main col">
-                <div class="row justify-content-center align-content-center text-center">
-                    <div class="columna col-lg-12">
-                        CONTENIDO
-                        <form class="row">
-                            <div class="col-lg-4">
-                                <label class="form-label" for="año">Seleccione el año</label>
-                                <select class="form-control" id="año" required>
-                                    <option value="">...</option>
-                                    <option>2011</option>
-                                    <option>2012</option>
-                                    <option>2013</option>
-
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <label class="form-label" for="municipio">Seleccione el municipio</label>
-                                <select class="form-control" id="municipio" required>
-                                    <option value="">...</option>
-                                    <option>Loja</option>
-                                    <option>Catamayo</option>
-                                    <option>Malacatos</option>
-                                    <option>Vilcabamba</option>
-                                    <option>Cariamanga</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <label class="form-label" for="indicador">Seleccione el indicador</label>
-                                <select class="form-control" id="indicador" required>
-                                    <option value="">...</option>
-                                    <option>Ambiental</option>
-                                    <option>Económico</option>
-                                    <option>Institucional</option>
-                                    <option>Social</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
+                <div class="titulo text-center" style="color: white; ">
+                    <h1>Ingrese los valores del indicador institucional</h1>
                 </div>
                 <hr size="10px" color="white" />
                 <div class="row justify-content-center align-content-justify ">
@@ -106,46 +71,68 @@
                         <!--FORMULARIO-->
 
                         <form class="row formulario" action="/panelSocial" method="post">
-                            
+
                             <!--Fila 1-->
 
                             <div class="col-lg-3">
                                 <label class="formSoc" for="inputA1">Número de vehiculos recolectores</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS1" name="inputS1" value="8787">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS1"
+                                    name="inputS1" value="8787">
                             </div>
                             <div class="col-lg-3">
                                 <label class="formSoc" for="inputS2">Capacidad en ton. de vehiculos recolectores</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS2" name="inputS2">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS2"
+                                    name="inputS2">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formSoc" for="inputS3">Que cobertura en porcentaje cubre servicio de barrido</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS3" name="inputS3">
+                                <label class="formSoc" for="inputS3">Que cobertura en porcentaje cubre servicio de
+                                    barrido</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS3"
+                                    name="inputS3">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formSoc" for="inputS4">Que cobertura en km cubre servicio de barrido</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS4" name="inputS4">
+                                <label class="formSoc" for="inputS4">Que cobertura en km cubre servicio de
+                                    barrido</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS4"
+                                    name="inputS4">
                             </div>
 
                             <!--Fila 2-->
 
                             <div class="col-lg-3">
-                                <label class="formSoc" for="inputS5">Porcentaje que cubre servicio de barrido en parroquias urbanas</label>
+                                <label class="formSoc" for="inputS5">Porcentaje que cubre servicio de barrido en
+                                    parroquias urbanas</label>
                                 <br><br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS5" name="inputS5">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS5"
+                                    name="inputS5">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formSoc" for="inputS6">Porcentaje que cubre servicio de barrido en parroquias rurales</label>
+                                <label class="formSoc" for="inputS6">Porcentaje que cubre servicio de barrido en
+                                    parroquias rurales</label>
                                 <br><br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS6" name="inputS6">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS6"
+                                    name="inputS6">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formSoc" for="inputS7">Porcentaje de cobertura de recolección hacia los establecimientos que producen residuos infecciosos</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS7" name="inputS7">
+                                <label class="formSoc" for="inputS7">Porcentaje de cobertura de recolección hacia los
+                                    establecimientos que producen residuos infecciosos</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS7"
+                                    name="inputS7">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formSoc" for="inputS8">Proyectos para conservación de las fuentes de capción de agua</label>
+                                <label class="formSoc" for="inputS8">Proyectos para conservación de las fuentes de
+                                    capción de agua</label>
                                 <br><br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS8" name="inputS8">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS8"
+                                    name="inputS8">
                             </div>
 
                             <!--Fila 3-->
@@ -153,56 +140,88 @@
                             <div class="col-lg-3">
                                 <label class="formSoc" for="inputS9">Abastecimiento de agua potable.Horas</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS9" name="inputS9">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS9"
+                                    name="inputS9">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formSoc" for="inputS10">Área en m2 que ocupa la institución:Área de construcción</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS10" name="inputS10">
+                                <label class="formSoc" for="inputS10">Área en m2 que ocupa la institución:Área de
+                                    construcción</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS10"
+                                    name="inputS10">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formSoc" for="inputS11">Área en m2 de las áreas verdes bajo la administración 2012:Parques</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS11" name="inputS11">
+                                <label class="formSoc" for="inputS11">Área en m2 de las áreas verdes bajo la
+                                    administración 2012:Parques</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS11"
+                                    name="inputS11">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formSoc" for="inputS12">Área en m2 de las áreas verdes bajo la administración 2012:Plazas</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputS12" name="inputS12">
+                                <label class="formSoc" for="inputS12">Área en m2 de las áreas verdes bajo la
+                                    administración 2012:Plazas</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputS12"
+                                    name="inputS12">
                             </div>
 
                             <!--Fila 4-->
 
                             <div class="col-lg-3">
-                                <label class="formSoc1" for="inputA13">Área en m2 de las áreas verdes bajo la administración 2012:Jardines</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputA13" name="inputS13">
+                                <label class="formSoc1" for="inputA13">Área en m2 de las áreas verdes bajo la
+                                    administración 2012:Jardines</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA13"
+                                    name="inputS13">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb1" for="inputA14">Área en m2 de las áreas verdes bajo la administración 2012:Parterres</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputA14" name="inputS14">
+                                <label class="formAmb1" for="inputA14">Área en m2 de las áreas verdes bajo la
+                                    administración 2012:Parterres</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA14"
+                                    name="inputS14">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb1" for="inputA15">Área en m2 de las áreas verdes bajo la administración 2012:Riberas</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputA15" name="inputS15">
+                                <label class="formAmb1" for="inputA15">Área en m2 de las áreas verdes bajo la
+                                    administración 2012:Riberas</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA15"
+                                    name="inputS15">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb1" for="inputA16">Área en m2 de las áreas verdes bajo la administración 2012:Estadios</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputA16" name="inputS16">
+                                <label class="formAmb1" for="inputA16">Área en m2 de las áreas verdes bajo la
+                                    administración 2012:Estadios</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA16"
+                                    name="inputS16">
                             </div>
 
                             <!--FILA 5-->
                             <div class="col-lg-4">
-                                <label class="formAmb1" for="inputA17">Área en m2 de las áreas verdes bajo la administración 2012:Deportivas</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputA17" name="inputS17">
+                                <label class="formAmb1" for="inputA17">Área en m2 de las áreas verdes bajo la
+                                    administración 2012:Deportivas</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA17"
+                                    name="inputS17">
                             </div>
                             <div class="col-lg-4">
-                                <label class="formAmb1" for="inputA18">Área en m2 de las áreas verdes bajo la administración 2012:Otras urbanas</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputA18" name="inputS18">
+                                <label class="formAmb1" for="inputA18">Área en m2 de las áreas verdes bajo la
+                                    administración 2012:Otras urbanas</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA18"
+                                    name="inputS18">
                             </div>
                             <div class="col-lg-4">
-                                <label class="formAmb1" for="inputA19">área total en hectáreas del área urbana del municipio</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales"  class="form-control1" id="inputA19" name="inputS19">
+                                <label class="formAmb1" for="inputA19">área total en hectáreas del área urbana del
+                                    municipio</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA19"
+                                    name="inputS19">
                             </div>
- 
 
-                            <button type="submit" class="btn btn-primary d-block mx-auto" >Guardar</button>
+
+                            <button type="submit" class="btn btn-primary d-block mx-auto">Guardar</button>
 
                         </form>
                         <hr size="20px" color="white" />
@@ -229,106 +248,124 @@
                                                 <th scope="col">id</th>
                                                 <th scope="col">Número de vehiculos recolectores</th>
                                                 <th scope="col">Capacidad en ton. de vehiculos recolectores</th>
-                                                <th scope="col">Que cobertura en porcentaje cubre servicio de barrido</th>
+                                                <th scope="col">Que cobertura en porcentaje cubre servicio de barrido
+                                                </th>
                                                 <th scope="col">Que cobertura en km cubre servicio de barrido</th>
-                                                <th scope="col">Porcentaje que cubre servicio de barrido en parroquias urbanas</th>
-                                                <th scope="col">Porcentaje que cubre servicio de barrido en parroquias rurales</th>
-                                                <th scope="col">Porcentaje de cobertura de recolección hacia los establecimientos que producen residuos infecciosos</th>
-                                                <th scope="col">Proyectos para conservación de las fuentes de capción de agua</th>
+                                                <th scope="col">Porcentaje que cubre servicio de barrido en parroquias
+                                                    urbanas</th>
+                                                <th scope="col">Porcentaje que cubre servicio de barrido en parroquias
+                                                    rurales</th>
+                                                <th scope="col">Porcentaje de cobertura de recolección hacia los
+                                                    establecimientos que producen residuos infecciosos</th>
+                                                <th scope="col">Proyectos para conservación de las fuentes de capción de
+                                                    agua</th>
                                                 <th scope="col">Abastecimiento de agua potable.Horas</th>
-                                                <th scope="col">Área en m2 que ocupa la institución:Área de construcción</th>
-                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración 2012:Parques</th>
-                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración 2012:Plazas</th>
-                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración 2012:Jardines</th>
-                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración 2012:Parterres</th>
-                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración 2012:Riberas</th>
-                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración 2012:Estadios</th>
-                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración 2012:Deportivas</th>
-                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración 2012:Otras urbanas</th>
-                                                <th scope="col">Área total en hectáreas del área urbana del municipio</th>
+                                                <th scope="col">Área en m2 que ocupa la institución:Área de construcción
+                                                </th>
+                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración
+                                                    2012:Parques</th>
+                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración
+                                                    2012:Plazas</th>
+                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración
+                                                    2012:Jardines</th>
+                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración
+                                                    2012:Parterres</th>
+                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración
+                                                    2012:Riberas</th>
+                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración
+                                                    2012:Estadios</th>
+                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración
+                                                    2012:Deportivas</th>
+                                                <th scope="col">Área en m2 de las áreas verdes bajo la administración
+                                                    2012:Otras urbanas</th>
+                                                <th scope="col">Área total en hectáreas del área urbana del municipio
+                                                </th>
                                                 <th>action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>
-                                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>
-                                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>
-                                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                                            </td>
-                                        </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>
+                                                    <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+                                                            class="fas fa-user-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>
+                                                    <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+                                                            class="fas fa-user-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>
+                                                    <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+                                                            class="fas fa-user-times"></i></a>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
-        
+
                             </div>
                         </div>
                     </div>
@@ -336,15 +373,17 @@
             </div>
         </div>
     </div>
-             
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/646c794df3.js"></script>
     <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>        
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>
 
 </body>
 

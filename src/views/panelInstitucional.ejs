@@ -36,7 +36,7 @@
 
 
                         <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
-                            <a class="dropdown-item menuperfil cerrar" href="/perfil">
+                            <a class="dropdown-item menuperfil cerrar" href="/profile">
                                 <i class="fas fa-user"></i>Perfil</a>
                             <a class="dropdown-item menuperfil cerrar" href="/configuracion">
                                 <i class="fas fa-user-edit"></i>Configuración</a>
@@ -60,48 +60,11 @@
                     <a href="panelAmbiental"><i class="fas fa-home"></i><span>Indicador Ambiental</span></a>
                     <a href="panelSocial"><i class="fas fa-home"></i><span>Indicador Social</span></a>
                     <a href="panelInstitucional"><i class="fas fa-home"></i><span>Indicador Institucional</span></a>
-                    <a href="#"><i class="fas fa-home"></i><span>Notificaciones</span></a>
-
                 </nav>
             </div>
             <main class="main col">
-                <div class="row justify-content-center align-content-center text-center">
-                    <div class="columna col-lg-12">
-                        CONTENIDO
-                        <form class="row">
-                            <div class="col-lg-4">
-                                <label class="form-label" for="año">Seleccione el año</label>
-                                <select class="form-control" id="año" required>
-                                    <option value="">...</option>
-                                    <option>2011</option>
-                                    <option>2012</option>
-                                    <option>2013</option>
-
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <label class="form-label" for="municipio">Seleccione el municipio</label>
-                                <select class="form-control" id="municipio" required>
-                                    <option value="">...</option>
-                                    <option>Loja</option>
-                                    <option>Catamayo</option>
-                                    <option>Malacatos</option>
-                                    <option>Vilcabamba</option>
-                                    <option>Cariamanga</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <label class="form-label" for="indicador">Seleccione el indicador</label>
-                                <select class="form-control" id="indicador" required>
-                                    <option value="">...</option>
-                                    <option>Ambiental</option>
-                                    <option>Económico</option>
-                                    <option>Institucional</option>
-                                    <option>Social</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
+                <div class="titulo text-center" style="color: white; ">
+                    <h1>Ingrese los valores del indicador instuticional</h1>
                 </div>
                 <hr size="10px" color="white" />
                 <div class="row justify-content-center align-content-justify ">
@@ -114,72 +77,98 @@
                             <!--Fila 1-->
 
                             <div class="col-lg-3">
-                                <label class="formInst"  for="inputI1">Funcionarios que trabajan tiempo completo</label>
+                                <label class="formInst" for="inputI1">Funcionarios que trabajan tiempo completo</label>
                                 <br><br><br>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI1" name="inputI1" value="8787">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI1"
+                                    name="inputI1" value="8787">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formInst"  for="inputI2">Cobertura en km que cubre el servicio de barrido de
+                                <label class="formInst" for="inputI2">Cobertura en km que cubre el servicio de barrido
+                                    de
                                     las zonas públicas</label>
                                 <br><br>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI2" name="inputI2">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI2"
+                                    name="inputI2">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formInst"  for="inputI3">Número de personas dedicadas al servicio de
+                                <label class="formInst" for="inputI3">Número de personas dedicadas al servicio de
                                     barrido</label>
                                 <br><br>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI3" name="inputI3">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI3"
+                                    name="inputI3">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formInst"  for="inputI4">Número total de empleados que laboraron en trabajo
+                                <label class="formInst" for="inputI4">Número total de empleados que laboraron en trabajo
                                     exclusivo en gestión ambiental</label>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI4" name="inputI4">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI4"
+                                    name="inputI4">
                             </div>
 
                             <!--Fila 2-->
 
                             <div class="col-lg-3">
-                                <label class="formInst"  for="inputI5">Consumo de energía eléctrica 2012(KWH y valor)
+                                <label class="formInst" for="inputI5">Consumo de energía eléctrica 2012(KWH y valor)
                                 </label>
                                 <br><br>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI5" name="inputI5">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI5"
+                                    name="inputI5">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formInst"  for="inputI6">Consumo de energía eléctrica 2012(KWH y valor)
+                                <label class="formInst" for="inputI6">Consumo de energía eléctrica 2012(KWH y valor)
                                     valor</label>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI6" name="inputI6">
+                                    <br><br>
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI6"
+                                    name="inputI6">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formInst"  for="inputI7">Cantidad de combustible que utilizó la institución:
+                                <label class="formInst" for="inputI7">Cantidad de combustible que utilizó la
+                                    institución:
                                     Diesel</label>
                                 <br><br>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI7" name="inputI7">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI7"
+                                    name="inputI7">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formInst"  for="inputI8">Cantidad de combustible que utilizó la institución:
+                                <label class="formInst" for="inputI8">Cantidad de combustible que utilizó la
+                                    institución:
                                     Extra</label>
                                 <br><br>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI8" name="inputI8">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI8"
+                                    name="inputI8">
                             </div>
 
                             <!--Fila 3-->
 
                             <div class="col-lg-4 text-center">
-                                <label class="formInst"  for="inputI9">Cantidad de combustible que utilizó la institución:
+                                <label class="formInst" for="inputI9">Cantidad de combustible que utilizó la
+                                    institución:
                                     Super</label>
-                                <br><br>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI9" name="inputI9">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI9"
+                                    name="inputI9">
                             </div>
                             <div class="col-lg-4  text-center">
-                                <label class="formInst"  for="inputI10">Número de productos maderables que adquirio la
+                                <label class="formInst" for="inputI10">Número de productos maderables que adquirio la
                                     institución: Papel</label>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI10" name="inputI10">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI10"
+                                    name="inputI10">
                             </div>
                             <div class="col-lg-4  text-center">
-                                <label class="formInst"  for="inputI11">Total de los cortes del servicio de agua potable
+                                <label class="formInst" for="inputI11">Total de los cortes del servicio de agua potable
                                     en el mes</label>
                                 <br>
-                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?" title="Solo se permiten numeros y decimales" class="form-control1" id="inputI11" name="inputI11">
+                                <input type="tel" step="any" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputI11"
+                                    name="inputI11">
                             </div>
 
                             <button type="submit" class="btn btn-primary d-block mx-auto">Guardar</button>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ext/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/banIndicadores.css">
+    <title>Indicadores</title>
+    <%- include("partials/head") %>
+</head>
+
+<body>
+    <%- include("partials/navigation") %>
+        <section>
+            <div class="cont_banner">
+                <div class="sombra">
+                    <h1>Indicadores</h1>
+                    <hr />
+                    <p>Estadística de información ambiental económica en gobiernos autónomos descentralizados
+                        municipales</p>
+                    <div class="cont_banner_link">
+                        <a class="banner_link" href="/indicadores">Indicadores</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-custom1">
+                            <div class="card-body">
+                                <div class="custom-box1 ">
+                                    <h1 class="tituloIndicador text-center">Seleccionar Indicadores</h1>
+                                    <h5 class="card-title1 m-3"
+                                        style="padding-top: 1rem;font-weight:bolder; text-align: center;">
+                                        Indicadores</h5>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckChecked" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Gestión
+                                            Ambiental</label>
+                                    </div>
+
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Gestión
+                                            Económico</label>
+                                    </div>
+
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Gestión
+                                            Social</label>
+                                    </div>
+
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Gestión
+                                            Institucional</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button style="background: rgba(34, 34, 7, 0.75);
+    border-radius: 20px; border-color: black; margin-bottom: 3rem;margin-top: 3rem;" class="btn btn-primary "
+                                    type="button">Calcular</button>
+                            </div>
+
+                            <div class="text-center">
+                                <img style="width: 85%;margin-bottom: 2rem;" class="img-fluid" src="/img/calcu.png"
+                                    alt="Grafica Radial">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card1 card-custom">
+                            <div class="card-body1">
+                                <div class="custom-box2" style="display: flex; justify-content: center;"></div>
+                                <h1 class="card-title2 m-3"
+                                    style="padding-top: 1rem;font-weight:bolder;font-size:30px;  margin-bottom: 7rem;">
+                                    Instrucciones y Aclaraciones</h1>
+                                <h6>Indicador Ambiental</h6>
+                                <p>Se pueden interpretar como variables que han sido
+                                    socialmente dotadas de un significado añadido al derivado de su propia configuración
+                                    científica, con el fin de reflejar de forma sintética una preocupación social con
+                                    respecto al ambiente e insertarla coherentemente en el proceso de toma de
+                                    decisiones</p>
+                                <p>Sobre todo, en relación con el proceso de
+                                    seguimiento de la evolución de la gestión ambiental en los sectores públicos y
+                                    privados es así, que durante las últimas décadas la
+                                    preocupación por el ambiente ha despertado interés en los diferentes sectores de
+                                    gobierno como herramienta de información para la elaboración de informes sobre el
+                                    estado del ambiente</p>
+                                <h6>Indicador Económico</h6>
+                                <p>Los indicadores económicos ayudan a medir el impacto económico de la gestión
+                                    ambiental en el municipio. Estos pueden incluir la inversión en proyectos de medio
+                                    ambiente, la generación de empleo en industrias verdes, la eficiencia energética y
+                                    la utilización de recursos sostenibles. Al conocer estos indicadores, se puede
+                                    evaluar la efectividad de la gestión ambiental en el municipio y tomar decisiones
+                                    para mejorarla.
+                                </p>
+                                <h6>Indicador Social</h6>
+                                <p>Los indicadores sociales miden el impacto de la gestión ambiental en la sociedad y la
+                                    calidad de vida de la población. Estos pueden incluir aspectos como el acceso a
+                                    servicios básicos como agua potable y saneamiento, la educación ambiental, la
+                                    participación ciudadana en la toma de decisiones ambientales, la satisfacción de la
+                                    población con la gestión ambiental, entre otros. Estos indicadores ayudan a evaluar
+                                    el progreso en la consecución de objetivos sociales relacionados con el medio
+                                    ambiente y a identificar áreas en las que se deben hacer mejoras.
+                                </p>
+                                <h6>Indicador Institucional</h6>
+                                <p>Los indicadores institucionales miden el grado de implementación y fortalecimiento de
+                                    las políticas y estructuras institucionales en torno a la gestión ambiental en el
+                                    municipio. Estos indicadores evalúan aspectos como la existencia de un plan de
+                                    gestión ambiental, la presencia de una entidad encargada de la gestión ambiental, la
+                                    capacitación y formación de los funcionarios, la participación ciudadana y la
+                                    transparencia en la toma de decisiones. Con estos indicadores se puede evaluar la
+                                    eficacia de la gestión institucional en la protección y preservación del medio
+                                    ambiente en el municipio.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+        <section id="sectionVariables">
+            <div class="cont_banner_sec_3">
+                <div class="container">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-4  text-center justify-content-center ">
+                            <br><br><br>
+                            <h3 class="titulo text-center ">Seleccione el indicador de su interés</h3>
+                            <select name="selectInd" id="indicador">
+                                <option>...</option>
+                                <option value="opcion1">Económico</option>
+                                <option value="opcion2">Social</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="col-md-4 cont_img  text-center">
+                            <h2>Variables</h2>
+                            <p>Factores que inciden en los componentes y precisar la medida de la gestión ambiental.</p>
+                            <img src="../img/SliderDerecha.png" style="width:150px;height:150px; " alt="Imagen 1">
+                            <a class="btn btn-secondary btn-md" href="/varAmb#sectionVariables">Ver variables</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <%- include("partials/footer") %>
+</body>
+
+</html>

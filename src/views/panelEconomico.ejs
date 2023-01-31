@@ -12,11 +12,11 @@
     <!-- DATA TABLE -->
 
     <script type="text/javascript">
-	    $(document).ready(function() {
-	        //Asegurate que el id que le diste a la tabla sea igual al texto despues del simbolo #
-	        $('#userList').DataTable();
-	    } );
-	</script>
+        $(document).ready(function () {
+            //Asegurate que el id que le diste a la tabla sea igual al texto despues del simbolo #
+            $('#userList').DataTable();
+        });
+    </script>
 
 </head>
 
@@ -35,7 +35,7 @@
                                 class="fas fa-user-circle user"></i></a>
 
                         <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
-                            <a class="dropdown-item menuperfil cerrar" href="/perfil">
+                            <a class="dropdown-item menuperfil cerrar" href="/profile">
                                 <i class="fas fa-user"></i>Perfil</a>
                             <a class="dropdown-item menuperfil cerrar" href="/configuracion">
                                 <i class="fas fa-user-edit"></i>Configuración</a>
@@ -53,51 +53,16 @@
                 <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
                     <a href="dashboard"><i class="fas fa-house-user"></i><span>Panel de control</span></a>
                     <a href="panelEconomico"><i class="fas fa-coins"></i><span>Indicador Económico</span></a>
-                    <a href="panelAmbiental"><i class="fab fa-battle-net"></i><span>Indicador Ambiental</span></a>    <!--fas fa-fan-->
+                    <a href="panelAmbiental"><i class="fab fa-battle-net"></i><span>Indicador Ambiental</span></a>
+                    <!--fas fa-fan-->
                     <a href="panelSocial"><i class="fas fa-globe"></i><span>Indicador Social</span></a>
-                    <a href="panelInstitucional"><i class="fas fa-university"></i><span>Indicador Institucional</span></a>
-                    <a href="#"><i class="fas fa-bell"></i><span>Notificaciones</span></a>
-
+                    <a href="panelInstitucional"><i class="fas fa-university"></i><span>Indicador
+                            Institucional</span></a>
                 </nav>
             </div>
             <main class="main col">
-                <div class="row justify-content-center align-content-center text-center">
-                    <div class="columna col-lg-12">
-                        CONTENIDO
-                        <form class="row">
-                            <div class="col-lg-4">
-                                <label class="form-label" for="año">Seleccione el año</label>
-                                <select class="form-control" id="año" required>
-                                    <option value="">...</option>
-                                    <option>2011</option>
-                                    <option>2012</option>
-                                    <option>2013</option>
-
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <label class="form-label" for="municipio">Seleccione el municipio</label>
-                                <select class="form-control" id="municipio" required>
-                                    <option value="">...</option>
-                                    <option>Loja</option>
-                                    <option>Catamayo</option>
-                                    <option>Malacatos</option>
-                                    <option>Vilcabamba</option>
-                                    <option>Cariamanga</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <label class="form-label" for="indicador">Seleccione el indicador</label>
-                                <select class="form-control" id="indicador" required>
-                                    <option value="">...</option>
-                                    <option>Ambiental</option>
-                                    <option>Económico</option>
-                                    <option>Institucional</option>
-                                    <option>Social</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
+                <div class="titulo text-center" style="color: white; ">
+                    <h1>Ingrese los valores del indicador Económico</h1>
                 </div>
                 <hr size="10px" color="white" />
                 <div class="row justify-content-center align-content-justify ">
@@ -106,76 +71,114 @@
                         <!--FORMULARIO-->
 
                         <form class="row formulario" action="/panelEconomico" method="post">
-                            
+
                             <!--Fila 1-->
 
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputA1">Presupuesto anual (para planes de sensibilización)</label>
+                                <label class="formEco" for="inputA1">Presupuesto anual (para planes de
+                                    sensibilización)</label>
                                 <br><br><br>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE1" name="inputE1" value="8787">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE1"
+                                    name="inputE1" value="8787">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE2">Monto recaudado del cobro por la recolección de residuos residencial</label>
+                                <label class="formEco" for="inputE2">Monto recaudado del cobro por la recolección de
+                                    residuos residencial</label>
                                 <br><br>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE2" name="inputE2">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE2"
+                                    name="inputE2">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE3">Total del monto recaudado por el cobro de recolección de residuos residencial e industrial</label>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE3" name="inputE3">
+                                <label class="formEco" for="inputE3">Total del monto recaudado por el cobro de
+                                    recolección de residuos residencial e industrial</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE3"
+                                    name="inputE3">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE4">Presupuesto anual para campañas de conservación de las fuentes de captación de agua</label>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE4" name="inputE4">
+                                <label class="formEco" for="inputE4">Presupuesto anual para campañas de conservación de
+                                    las fuentes de captación de agua</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE4"
+                                    name="inputE4">
                             </div>
 
                             <!--Fila 2-->
 
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE5">Ingresos provenientes de recursos fiscales generados por instituciones</label>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE5" name="inputE5">
+                                <label class="formEco" for="inputE5">Ingresos provenientes de recursos fiscales
+                                    generados por instituciones</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE5"
+                                    name="inputE5">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE6">Ingresos provenientes de: Recursos de preasignaciones</label>
+                                <label class="formEco" for="inputE6">Ingresos provenientes de: Recursos de
+                                    preasignaciones</label>
                                 <br><br>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE6" name="inputE6">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE6"
+                                    name="inputE6">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE7">Ingresos provenientes de: Recursos de crédito internos</label>
+                                <label class="formEco" for="inputE7">Ingresos provenientes de: Recursos de crédito
+                                    internos</label>
                                 <br><br>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE7" name="inputE7">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE7"
+                                    name="inputE7">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE8">Ingresos provenientes de: Asistencia técnica y donaciones</label>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE8" name="inputE8">
+                                <label class="formEco" for="inputE8">Ingresos provenientes de: Asistencia técnica y
+                                    donaciones</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE8"
+                                    name="inputE8">
                             </div>
 
                             <!--Fila 3-->
 
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE9">Ingresos provenientes de: Anticípos de ejercicios anteriores</label>
+                                <label class="formEco" for="inputE9">Ingresos provenientes de: Anticípos de ejercicios
+                                    anteriores</label>
                                 <br><br>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE9" name="inputE9">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE9"
+                                    name="inputE9">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE10">Total de ingresos recibidos</label>
+                                <label class="formEco" for="inputE10">Total de ingresos recibidos</label>
                                 <br><br><br><br>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE10" name="inputE10">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE10"
+                                    name="inputE10">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE11">Ingresos para protección ambiental provenientes de: Recursos fiscales generados por la institución</label>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE11" name="inputE11">
+                                <label class="formEco" for="inputE11">Ingresos para protección ambiental provenientes
+                                    de: Recursos fiscales generados por la institución</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE11"
+                                    name="inputE11">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formEco"    for="inputE12">Ingresos para protección ambiental provenientes de preasignaciones</label>
+                                <label class="formEco" for="inputE12">Ingresos para protección ambiental provenientes de
+                                    preasignaciones</label>
                                 <br><br>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE12" name="inputE12">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE12"
+                                    name="inputE12">
                             </div>
 
                             <!--Fila 4-->
 
                             <div class="col-lg-12">
-                                <label class="formEco1 "   for="inputE13">Total de ingresos recibidos para protección ambiental</label>
-                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputE13" name="inputE13">
+                                <label class="formEco1 " for="inputE13">Total de ingresos recibidos para protección
+                                    ambiental</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputE13"
+                                    name="inputE13">
                             </div>
                             <button type="submit" class="btn btn-primary d-block mx-auto">Guardar</button>
 
@@ -203,79 +206,92 @@
                                             <tr>
                                                 <th scope="col">id</th>
                                                 <th scope="col">Presupuesto anual (para planes de sensibilización)</th>
-                                                <th scope="col">Monto recaudado del cobro por la recolección de residuos residencial</th>
-                                                <th scope="col">Presupuesto anual para campañas de conservación de las fuentes de captación de agua</th>
-                                                <th scope="col">Ingresos provenientes de recursos fiscales generados por instituciones de valor</th>
-                                                <th scope="col">Ingresos provenientes de: Recursos de preasignaciones</th>
-                                                <th scope="col">Ingresos provenientes de: Recursos de crédito internos</th>
-                                                <th scope="col">Ingresos provenientes de: Asistencia técnica y donaciones</th>
-                                                <th scope="col">Ingresos provenientes de: Anticípos de ejercicios anteriores</th>
+                                                <th scope="col">Monto recaudado del cobro por la recolección de residuos
+                                                    residencial</th>
+                                                <th scope="col">Presupuesto anual para campañas de conservación de las
+                                                    fuentes de captación de agua</th>
+                                                <th scope="col">Ingresos provenientes de recursos fiscales generados por
+                                                    instituciones de valor</th>
+                                                <th scope="col">Ingresos provenientes de: Recursos de preasignaciones
+                                                </th>
+                                                <th scope="col">Ingresos provenientes de: Recursos de crédito internos
+                                                </th>
+                                                <th scope="col">Ingresos provenientes de: Asistencia técnica y
+                                                    donaciones</th>
+                                                <th scope="col">Ingresos provenientes de: Anticípos de ejercicios
+                                                    anteriores</th>
                                                 <th scope="col">Total de ingresos recibidos</th>
-                                                <th scope="col">Ingresos para protección ambiental provenientes de: Recursos fiscales generados por la institución</th>
-                                                <th scope="col">Ingresos para protección ambiental provenientes de preasignaciones</th>
-                                                <th scope="col">Total de ingresos recibidos para protección ambiental</th>
+                                                <th scope="col">Ingresos para protección ambiental provenientes de:
+                                                    Recursos fiscales generados por la institución</th>
+                                                <th scope="col">Ingresos para protección ambiental provenientes de
+                                                    preasignaciones</th>
+                                                <th scope="col">Total de ingresos recibidos para protección ambiental
+                                                </th>
                                                 <th>action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>
-                                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>
-                                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>
-                                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                                            </td>
-                                        </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>
+                                                    <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+                                                            class="fas fa-user-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>
+                                                    <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+                                                            class="fas fa-user-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>
+                                                    <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+                                                            class="fas fa-user-times"></i></a>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
-        
+
                             </div>
                         </div>
                     </div>
@@ -283,15 +299,17 @@
             </div>
         </div>
     </div>
-             
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/646c794df3.js"></script>
     <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>        
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>
 
 </body>
 

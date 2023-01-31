@@ -1,0 +1,103 @@
+INDICADOR AMBIENTAL
+
+Área rrelleno sanitario
+Numero de botaderos
+Área botaderos
+Residuos Recolectados 2012
+Recolección residuos solidos
+Residuos peligrosos
+Residuos orgánicos
+Residuos inorganicos
+Total residuos tratados
+Residuos urbanos reciclados
+Cantidad de residuos urbanos
+Residuos sólidos y peligrosos
+Fuentes agua superficial
+Fuentes agua subterranea
+Volumen agua superficial y subterranea
+Volumen bruto agua dulce
+Total agua registrada
+Cantidad agua residual recolectada 
+Total agua residual
+Tratamiento agua residual
+Número de plantas residual
+Capacidad planta de tratamiento
+Volumen agua vertida
+Volumen agua no vertida
+Cantidad sistema de alcantarillado
+Consumo de agua institución
+
+
+ECONOMICO
+
+Planes de sensibilización
+Monto de recolección residuos
+Total del monto recolección
+Presupuesto para fuentes de captación
+"<p>Ingresos provenientes de <p>"
+Recursos fiscales
+Recursos de preasignaciones
+Recursos de crédito interno
+Asistencia técnica y dondaciones
+Anticipos de ejercicios anteriores
+Total ingresos recibidos
+<Proteccion ambiental>
+Recursos fiscales instituciones
+Recursos de preasginación
+Total monto protección ambiental
+
+
+SOCIAL 
+Vehiculos recolectores
+Capacidad ton. de recolectores
+Cobertura servicio de barrido
+Cobertura km servicio de barrido
+Porcentaje barrido urbano
+Porcentaje barrido rural
+Porcentaje residuos infecciosos
+Proyecto fuentes de agua
+Abastecimiento agua horas
+Área de construcción
+<p>Administracion</p>
+Área verde parques
+Área verde plazas
+Área verde jardines
+Área verde parterres
+Área verde riberas
+Área verde estadios
+Área verde canchas deportivas
+Otras areas verdes
+Total area urbana municipio
+
+
+INSTITUCIONALES
+
+Número de funcionarios
+Barrido zonas públicas
+Número personas de barrido
+Empleados gestion ambiental
+Consumo energía 2012
+Energia electrica
+Combustible Diesel
+Combustible extra
+Combustible super
+Productos maderables
+Total cortes de agua al mes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

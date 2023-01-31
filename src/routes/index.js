@@ -11,10 +11,30 @@ router.get("/", (req, res) => {
   res.render("home", { title: "Presupuesto Final" });
 });
 
-
-router.get("/calculadora", (req, res) => {
-  res.render("calculadora", { title: "Hosting" });
+router.get("/indicadores", (req, res) => {
+  res.render("indicadores", { title: "Hosting" });
 });
+router.get("/configuracion", (req, res) => {
+  res.render("configuracion", { title: "Hosting" });
+});
+
+
+router.get("/varAmb", (req, res) => {
+  res.render("varAmb", { title: "Hosting" });
+});
+
+router.get("/varEco", (req, res) => {
+  res.render("varEco", { title: "Hosting" });
+});
+
+router.get("/varInst", (req, res) => {
+  res.render("varInst", { title: "Hosting" });
+});
+
+router.get("/varSoc", (req, res) => {
+  res.render("varSoc", { title: "Hosting" });
+}); 
+
 router.get("/panelEconomico", (req, res) => {
   res.render("panelEconomico", { title: "Panel Economico" });
 });
@@ -52,7 +72,7 @@ router.post('/login', (req, res) => {
 /**RECUPERSA LOS DATOS DE FORMULARIOS*/
 router.post("/panelAmbiental", (req, res) => {
   let listaAmb = []
-  for (let i = 1; i <= 25; i++) {
+  for (let i = 1; i <= 26; i++) {
     const indAmb = `a${i}`;
     const value = req.body[`inputA${i}`];
     console.log(indAmb, value);
@@ -180,9 +200,13 @@ router.get("/contactos", (req, res) => {
   res.render("contactos", { title: "Nueva contraseña" });
 });
 
+router.get("/notificacion", (req, res) => {
+  res.render("notificacion", { title: "Nueva contraseña" });
+});
 
-
-
+router.get("/profile", (req, res) => {
+  res.render("profile", { title: "Nueva contraseña" });
+});
 
 router.get("/carga", (req, res) => {
   res.render("carga", { title: "Nueva contraseña" });

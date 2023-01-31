@@ -3,9 +3,6 @@ body {
   background: #F6F6F6
 }
 
-
-
-
 .navbar{
   background: linear-gradient(180deg, rgba(169, 226, 6, 0.85) 0%, rgba(99, 172, 27, 0.85) 97.4%);
   border: 1px solid #000000;
@@ -18,8 +15,8 @@ body {
 
 
 .navbar-brand {
-  font-family: 'Spicy Rice', cursive;
-  font-size: 1.5rem;
+  font-family: 'Poopins', sans-serif;
+  font-size: 1rem;
 }
 .navbar-nav {
   color: white;
@@ -30,8 +27,9 @@ body {
 
 .nav-link {
   text-transform: uppercase;
-  font-family: 'Spicy Rice', cursive;
+  font-family: 'Poopins', sans-serif;
   color: white;
+  font-weight:600;
 }
 
 .card-custom{
@@ -40,8 +38,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
-  font-weight: bold;
-
   background-position: center;
 }
 .custom-box{
@@ -112,7 +108,6 @@ img {
 .card-title2{
   font-family: 'Inter';
   font-style: italic;
-  font-weight: 600;
   font-size: 16px;
   line-height: 19px;
   text-align: center;
@@ -162,12 +157,12 @@ img {
 
   color: #000000;
   }
+
 }
 
 #footer {
   background: linear-gradient(180deg, rgba(169, 226, 6, 0.85) 0%, rgba(99, 172, 27, 0.85) 97.4%);
   height: 80px;
-
   align-items: center;
 }
 .social{  display: flex;
@@ -193,12 +188,43 @@ img {
   color: #fff;
   font-family: "Poopins" sans-serif;
   margin-top: 100px;
+  
+  
 }
 
 .cont_footer a{
-  color: #fff;
   text-decoration: none;
   display: block;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+.cont_footer h6{
+  text-decoration: none;
+  display: block;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+}
+.cont_footer a:hover{
+  color: rgba(255, 255, 255, 0.8);
+
+}
+.cont_footer p{
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+.cont_footer p:hover{
+  color: rgba(255, 255, 255, 0.8);
+
+}
+.cont_footer h2{
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+
+
 }
 .cont_img_footer{
   padding: 5%;

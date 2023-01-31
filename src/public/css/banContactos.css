@@ -15,22 +15,22 @@
 
 /*---SECTION 1*/
 
-.cont_sec_1{
+.cont_sec_1 {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 5%;
 }
 
-.cont_sec_1_link{
+.cont_sec_1_link {
     padding: 5%;
 }
 
-.cont_sec_1_link a{
+.cont_sec_1_link a {
     width: 200px;
 }
 
-.cont_sec_1 hr{
-    border-top: 1px solid rgba(1, 1,1, 0.3);
+.cont_sec_1 hr {
+    border-top: 1px solid rgba(1, 1, 1, 0.3);
 }
 
 /*---SECTION 2*/
@@ -54,7 +54,7 @@
 }
 
 /*Estilo columnas*/
-.cont_img{
+.cont_img {
     align-items: center;
     text-align: center;
     align-content: center;
@@ -62,7 +62,8 @@
     height: 50vh;
 
 }
-.cont_img1{
+
+.cont_img1 {
     align-items: center;
     text-align: center;
     align-content: center;
@@ -71,7 +72,8 @@
 
 
 }
-.cont_img2{
+
+.cont_img2 {
     align-items: center;
     text-align: center;
     align-content: center;
@@ -80,54 +82,58 @@
 
 
 }
-.cont_img h1{
+
+.cont_img h1 {
     text-align: center;
 }
-.cont_img p{
+
+.cont_img p {
     text-align: center;
     align-items: center;
 }
 
-.cont_img1 h1{
+.cont_img1 h1 {
     text-align: center;
 }
-.cont_img1 p{
+
+.cont_img1 p {
     text-align: center;
     align-items: center;
 }
 
-.cont_img2 h1{
+.cont_img2 h1 {
     text-align: center;
 }
-.cont_img2 p{
+
+.cont_img2 p {
     text-align: center;
     align-items: center;
 }
+
 .lily {
     height: 50%;
     width: 40%;
     border-radius: 50%;
-    border: 0.4vh solid #18c240;
+    border: 0.4vh solid #000000;
 }
- .nixon {
+
+.nixon {
     height: 50%;
     width: 40%;
     border-radius: 50%;
-    border: 0.4vh solid #18c240;
+    border: 0.4vh solid #000000;
 
 }
+
 .jhoel {
     width: 40%;
     height: 50%;
     border-radius: 50%;
-    border: 0.4vh solid #18c240;
+    border: 0.4vh solid #000000;
 
 }
 
-
-
 .lily:hover {
-    filter: grayscale(80%);
     -webkit-transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
     transform: rotateY(180deg);
@@ -135,7 +141,6 @@
 }
 
 .nixon:hover {
-    filter: grayscale(80%);
     -webkit-transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
     transform: rotateY(180deg);
@@ -143,7 +148,6 @@
 }
 
 .jhoel:hover {
-    filter: grayscale(80%);
     -webkit-transform: rotateY(180deg);
     -webkit-transform-style: preserve-3d;
     transform: rotateY(180deg);
@@ -154,7 +158,7 @@
 /*---LILY----*/
 .cont_img::after {
     content: "Quiero que tu web tenga un nosequé y un queseyó que yoquesé...";
-    color: rgb(193, 50, 50);
+    color: rgb(0, 0, 0);
     opacity: 0;
 }
 
@@ -164,9 +168,14 @@
 }
 
 .cont_img:hover {
-    box-shadow: 0 0 1vh 1vh rgba(0, 255, 0, 0.863);
+    box-shadow: 0 0 1vh 1vh rgba(0, 0, 0, 0.863);
     transition: all 0.4s ease-in-out;
-    background: aqua;
+    background: #EDE574;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E1F5C4, #EDE574);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 
 }
@@ -185,9 +194,14 @@
 }
 
 .cont_img1:hover {
-    box-shadow: 0 0 1vh 1vh rgba(0, 255, 0, 0.863);
+    box-shadow: 0 0 1vh 1vh rgba(0, 0, 0, 0.863);
     transition: all 0.4s ease-in-out;
-    background: aqua;
+    background: #EDE574;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E1F5C4, #EDE574);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -195,7 +209,7 @@
 
 .cont_img2::after {
     content: "Construyendo un mañana desde cada decisión de hoy";
-    color: rgb(193, 50, 50);
+    color: rgb(0, 0, 0);
     opacity: 0;
 }
 
@@ -205,59 +219,50 @@
 }
 
 .cont_img2:hover {
-    box-shadow: 0 0 1vh 1vh rgba(0, 255, 0, 0.863);
-    background: aqua;
+    box-shadow: 0 0 1vh 1vh rgba(0, 0, 0, 0.863);
+    background: #EDE574;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E1F5C4, #EDE574);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E1F5C4, #EDE574);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
-
-
-.cont_footer{
-    background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 97.4%);
-    padding: 0%;
-    color: #fff;
-    font-family: "Poopins" sans-serif;
-    margin-top: 100px;
-}
-
-.cont_footer a{
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-.cont_img_footer{
-    padding: 5%;
-}
-
-
 
 @media only screen and (max-width: 600px) {
     .container {
         background-size: cover;
         background-position: center;
     }
-    .cont_fondo{
+
+    .cont_fondo {
         height: 140vh;
     }
+
     .container p {
         font-size: 12px;
         text-align: justify;
     }
+
     .container h1 {
         font-size: 14px;
         text-align: center;
     }
+
     .cont_banner_sec_3 {
         height: 140vh;
     }
-    .lily{
+
+    .lily {
         padding-bottom: -40px;
         height: 20vh;
     }
-    .nixon{
+
+    .nixon {
         padding-bottom: -40px;
         height: 20vh;
     }
-    .jhoel{
+
+    .jhoel {
         padding-bottom: -40px;
         height: 20vh;
     }

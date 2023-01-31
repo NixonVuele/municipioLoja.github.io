@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cont_banner {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../img/munCalc.jpg");
+}
+
+.sombra {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 80%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin: auto;
+
+}
+
+.sombra hr {
+    border-top: 1px solid #fff;
+}
+
+.sombra h1 {
+    font-size: 4vw;
+    margin-bottom: 10px;
+}
+
+.sombra p {
+    font-size: 2vw;
+    margin-bottom: 10px;
+}
+
+.cont_banner_link {
+    margin: 15px;
+    position: relative;
+}
+
+.cont_banner_link a {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 1px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+.cont_banner_link a:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+.banner_link {
+    opacity: 0;
+    animation: ewk_keyframes_aparecer_de_arriba 1s;
+    -webkit-animation: ewk_keyframes_aparecer_de_arriba 1s;
+    animation-fill-mode: forwards;
+}
+
+.banner_link_1 {
+    opacity: 0;
+    animation: ewk_keyframes_aparecer_de_arriba 1s;
+    -webkit-animation: ewk_keyframes_aparecer_de_arriba 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.5s;
+}
+
+
+.cont_img .btn {
+    background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 100%);
+    border: none;
+    margin-left: 0.5rem;
+}
+
+
+
+body {
+    font-family: 'Poopins', sans-serif;
+}
+
+.container p {
+    text-align: justify;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.navbar div,
+.navbar ul {
+    background-color: transparent !important;
+}
+
+.card {
+    margin-top: 3rem;
+}
+
+.card-custom1 {
+    padding: 0.5rem;
+    border-color: #F6F6F6;
+    background: #F6F6F6;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    font-weight: 300px;
+    background-position: center;
+}
+
+
+.cont_footer {
+    background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 97.4%);
+    padding: 0%;
+    color: #fff;
+    font-family: "Poopins" sans-serif;
+    margin-top: 100px;
+}
+
+.cont_footer a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.cont_img_footer {
+    padding: 5%;
+}
+
+.d-grid button {
+    margin-top: 1rem;
+}
+
+
+input[type="checkbox"] {
+    position: relative;
+    top: 2px;
+    margin-right: 10px;
+}
+
+/* pantallas de escritorio */
+@media only screen and (min-width: 992px) {
+    .form-check-input {
+      float: right;
+    }
+  }
+  
+  /* pantallas móviles */
+  @media only screen and (max-width: 991px) {
+    .form-check-input {
+      float: none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  

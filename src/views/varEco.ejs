@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ext/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/banVariables.css">
+    <title>Variables económicas</title>
+    <%- include("partials/head") %>
+</head>
+
+<body>
+    <%- include("partials/navigation") %>
+        <section>
+            <div class="cont_banner">
+                <div class="sombra">
+                    <h1>Variables Económico</h1>
+                    <hr />
+                    <p>Estadística de información ambiental económica en gobiernos autónomos descentralizados
+                        municipales</p>
+                </div>
+            </div>
+        </section>
+        <hr />
+
+        <section>
+            <div class="container">
+                <br>
+                <h1 class="tituloIndicador text-center">Seleccionar Variables</h1>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-custom1">
+                            <div class="card-body">
+                                <div class="custom-box1">
+                                    <h5 class="card-title1 m-3"
+                                        style="padding-top: 1rem;font-weight:bolder; text-align: center;">
+                                        Variables de Indicador Económico</h5>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckChecked" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Planes de sensibilización                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Monto de recolección residuos
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Total del monto recolección
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Presupuesto para fuentes de captación</label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Recursos fiscales
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Recursos de preasignaciones
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Recursos de crédito interno
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Asistencia técnica y dondaciones
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Anticipos de ejercicios anteriores
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Total ingresos recibidos
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Recursos fiscales instituciones
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Recursos de preasginación
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Total monto protección ambiental
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button style=" background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 97.4%);
+                        border-radius: 20px; border-color: black; margin-bottom: 3rem;margin-top: 3rem; font-weight: 500px;"
+                                    class="btn btn-primary " type="button" >Calcular</button>
+                            </div>
+
+                            <div class="text-center">
+                                <img style="width: 85%;margin-bottom: 2rem;" class="img-fluid" src="/img/calcu.png"
+                                    alt="Grafica Radial">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card1 card-custom">
+                            <div class="card-body">
+                                <div class="custom-box2" style="display: flex; justify-content: center;"></div>
+                                <h5 class="card-title2 m-3" style="padding-top: 1rem;font-weight:bolder;">
+                                    Aclaraciones</h5>
+                                <p class="diccionario text-align:justify " style="margin: 2rem;">
+                                    Presupuesto Anual (para planes de sensibilización)<br><br>
+                                    Monto recaudado del cobro por la recolección de residuos residencial <br><br>
+                                    Total del monto recaudado por el cobro de recoleccion de residuos residencial e industrial <br><br>
+                                    Presupuesto anual para campañas de conservación de las fuentes de captación de agua<br><br>
+                                    Ingresos provenientes de: Recursos fiscales generados por instituciones de valor <br><br>
+                                    Ingresos provenientes de: Recursos de preasignaciones valor <br><br>
+                                    Ingresos provenientes de: Recursos de crédito internos valor  <br><br>
+                                    Ingresos provenientes de: Asistencia técnica y donacionaciones valor <br><br>
+                                    Ingresos provenientes de: Anticipos de ejercicios anteriores valor <br><br>
+                                    Total de ingresos recibidos <br><br>
+                                    Ingresos para protección ambiental provenientes de: Recursos fiscales generados por la institución<br><br> 
+                                    Ingresos para protección ambiental provenientes de: Recursos provenientes de preasignaciones valor<br><br>
+                                    Total del ingresos recibido para protección ambiental <br><br>
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+
+
+        <%- include("partials/footer") %>
+</body>
+
+</html>

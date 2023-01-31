@@ -12,11 +12,11 @@
     <!-- DATA TABLE -->
 
     <script type="text/javascript">
-	    $(document).ready(function() {
-	        //Asegurate que el id que le diste a la tabla sea igual al texto despues del simbolo #
-	        $('#userList').DataTable();
-	    } );
-	</script>
+        $(document).ready(function () {
+            //Asegurate que el id que le diste a la tabla sea igual al texto despues del simbolo #
+            $('#userList').DataTable();
+        });
+    </script>
 
 </head>
 
@@ -35,7 +35,7 @@
                                 class="fas fa-user-circle user"></i></a>
 
                         <div class="dropdown-menu" aria-labelledby="navbar-dropdown">
-                            <a class="dropdown-item menuperfil cerrar" href="/perfil">
+                            <a class="dropdown-item menuperfil cerrar" href="/profile">
                                 <i class="fas fa-user"></i>Perfil</a>
                             <a class="dropdown-item menuperfil cerrar" href="/configuracion">
                                 <i class="fas fa-user-edit"></i>Configuración</a>
@@ -53,187 +53,221 @@
                 <nav class="menu d-flex d-sm-block justify-content-center flex-wrap">
                     <a href="dashboard"><i class="fas fa-house-user"></i><span>Panel de control</span></a>
                     <a href="panelEconomico"><i class="fas fa-coins"></i><span>Indicador Económico</span></a>
-                    <a href="panelAmbiental"><i class="fab fa-battle-net"></i><span>Indicador Ambiental</span></a>    <!--fas fa-fan-->
+                    <a href="panelAmbiental"><i class="fab fa-battle-net"></i><span>Indicador Ambiental</span></a>
+                    <!--fas fa-fan-->
                     <a href="panelSocial"><i class="fas fa-globe"></i><span>Indicador Social</span></a>
-                    <a href="panelInstitucional"><i class="fas fa-university"></i><span>Indicador Institucional</span></a>
-                    <a href="#"><i class="fas fa-bell"></i><span>Notificaciones</span></a>
-
+                    <a href="panelInstitucional"><i class="fas fa-university"></i><span>Indicador
+                            Institucional</span></a>
                 </nav>
             </div>
             <main class="main col">
-                <div class="row justify-content-center align-content-center text-center">
-                    <div class="columna col-lg-12">
-                        CONTENIDO
-                        <form class="row">
-                            <div class="col-lg-4">
-                                <label class="form-label" for="año">Seleccione el año</label>
-                                <select class="form-control" id="año" required>
-                                    <option value="">...</option>
-                                    <option>2011</option>
-                                    <option>2012</option>
-                                    <option>2013</option>
-                                    <option>2018</option>
-                                    <option>2019</option>
-
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <label class="form-label" for="municipio">Seleccione el municipio</label>
-                                <select class="form-control" id="municipio" required>
-                                    <option value="">...</option>
-                                    <option>Loja</option>
-                                    <option>Catamayo</option>
-                                    <option>Malacatos</option>
-                                    <option>Vilcabamba</option>
-                                    <option>Cariamanga</option>
-                                </select>
-                            </div>
-                            <div class="col-lg-4">
-                                <label class="form-label" for="indicador">Seleccione el indicador</label>
-                                <select class="form-control" id="indicador" required>
-                                    <option value="">...</option>
-                                    <option>Ambiental</option>
-                                    <option>Económico</option>
-                                    <option>Institucional</option>
-                                    <option>Social</option>
-                                </select>
-                            </div>
-                        </form>
-                    </div>
+                <div class="titulo text-center" style="color: white; ">
+                    <h1>Ingrese los valores del indicador Ambiental</h1>
                 </div>
                 <hr size="10px" color="white" />
                 <div class="row justify-content-center align-content-justify ">
                     <div class="columna col-lg-12">
                         <form class="row formulario" action="/panelAmbiental" method="post">
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA1">Área que ocupa los Rellenos Sanitarios</label>
+                                <label class="formAmb" for="inputA1">Área que ocupa los Rellenos Sanitarios</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA1" name="inputA1" value="8787">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA1"
+                                    name="inputA1" value="8787">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA2">Número de botaderos</label>
+                                <label class="formAmb" for="inputA2">Número de botaderos</label>
                                 <br><br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA2" name="inputA2">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA2"
+                                    name="inputA2">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA3">Área que ocupa botaderos</label>
+                                <label class="formAmb" for="inputA3">Área que ocupa botaderos</label>
                                 <br><br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA3" name="inputA3">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA3"
+                                    name="inputA3">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA4">Total de residuos Recolectados en ton. en el 2012
+                                <label class="formAmb" for="inputA4">Total de residuos Recolectados en ton. en el 2012
                                 </label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA4" name="inputA4">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA4"
+                                    name="inputA4">
                             </div>
                             <hr size="20px" color="white" />
 
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA5">Total de recolección de residuos sólidos en forma
+                                <label class="formAmb" for="inputA5">Total de recolección de residuos sólidos en forma
                                     diferenciada</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA5" name="inputA5">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA5"
+                                    name="inputA5">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA6">Total de residuos peligrosos en toneladas</label>
+                                <label class="formAmb" for="inputA6">Total de residuos peligrosos en toneladas</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA6" name="inputA6">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA6"
+                                    name="inputA6">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA7">Total de residuos orgánicos en ton.</label>
+                                <label class="formAmb" for="inputA7">Total de residuos orgánicos en ton.</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA7" name="inputA7">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA7"
+                                    name="inputA7">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA8">Total de residuos inorgánicos ton.</label>
+                                <label class="formAmb" for="inputA8">Total de residuos inorgánicos ton.</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA8" name="inputA8">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA8"
+                                    name="inputA8">
                             </div>
 
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA9">Total de la cantidad tratada de todos los residuos</label>
+                                <label class="formAmb" for="inputA9">Total de la cantidad tratada de todos los
+                                    residuos</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA9" name="inputA9">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA9"
+                                    name="inputA9">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA10">Cantidad de Residuos Urbanos destinados al Reciclaje</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA10" name="inputA10">
+                                <label class="formAmb" for="inputA10">Cantidad de Residuos Urbanos destinados al
+                                    Reciclaje</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA10"
+                                    name="inputA10">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA11">Cantidad Total de Residuos Urbanos</label>
+                                <label class="formAmb" for="inputA11">Cantidad Total de Residuos Urbanos</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA11" name="inputA11">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA11"
+                                    name="inputA11">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA12">Total de residuos sólidos y residuos peligrosos tratados</label>
+                                <label class="formAmb" for="inputA12">Total de residuos sólidos y residuos peligrosos
+                                    tratados</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA12" name="inputA12">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA12"
+                                    name="inputA12">
                             </div>
 
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA13">Fuentes de captación de agua (agua superficial volumen)</label>
+                                <label class="formAmb" for="inputA13">Fuentes de captación de agua (agua superficial
+                                    volumen)</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA13" name="inputA13">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA13"
+                                    name="inputA13">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA14">Fuentes de captación de agua (agua subterráneavolumen)</label>
+                                <label class="formAmb" for="inputA14">Fuentes de captación de agua (agua subterránea
+                                    volumen)</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA14" name="inputA14">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA14"
+                                    name="inputA14">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA15">Volumen total de las fuentes de captación de agua superficial y subterránea</label>
+                                <label class="formAmb" for="inputA15">Volumen total de las fuentes de captación de agua
+                                    superficial y subterránea</label>
                                 <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA15" name="inputA15">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA15"
+                                    name="inputA15">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA16">Volumen bruto de agua dulce provisto para el suministro de agua potable m3</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA16" name="inputA16">
+                                <label class="formAmb" for="inputA16">Volumen bruto de agua dulce provisto para el
+                                    suministro de agua potable m3</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA16"
+                                    name="inputA16">
                             </div>
 
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA17">Total del Volumen de agua registrada y distribuida por tipo de ususario</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA17" name="inputA17">
+                                <label class="formAmb" for="inputA17">Total del Volumen de agua registrada y distribuida
+                                    por tipo de ususario</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA17"
+                                    name="inputA17">
                             </div>
                             <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA18">Cantidad total de agua residual recolectada m3</label>
-                                <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA18" name="inputA18">
-                            </div>
-                            <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA19">Total agua residual y su tratamiento</label>
-                                <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA19" name="inputA19">
-                            </div>
-                            <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA20">Número de plantas de tratamiento de agua residual</label>
-                                <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA20" name="inputA20">
-                            </div>
-
-                            <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA21">Capacidad del tipo de planta de tratamiento de agua residual</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA21" name="inputA21">
-                            </div>
-                            <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA22">Cantidad total de agua no tratada volumen m3</label>
-                                <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA22" name="inputA22">
-                            </div>
-                            <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA23">Volumen total de agua tratada vertida</label>
-                                <br><br>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA23" name="inputA23">
-                            </div>
-                            <div class="col-lg-3">
-                                <label class="formAmb"  for="inputA24">Cantidad de agua residual descargada al sisteme de
-                                    alcantarillado
+                                <label class="formAmb" for="inputA18">Cantidad total de agua residual recolectada
                                     m3</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control1" id="inputA24" name="inputA24">
+                                <br><br>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA18"
+                                    name="inputA18">
                             </div>
-                            <div class="col-12">
-                                <label class="formAmb1" for="inputA25">Consumo de agua de la institución durante
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA19">Total agua residual y su tratamiento</label>
+                                <br><br>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA19"
+                                    name="inputA19">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA20">Número de plantas de tratamiento de agua
+                                    residual</label>
+                                <br><br>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA20"
+                                    name="inputA20">
+                            </div>
+
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA21">Capacidad del tipo de planta de tratamiento de
+                                    agua residual</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA21"
+                                    name="inputA21">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA22">Cantidad total de agua no tratada volumen
+                                    m3</label>
+                                <br><br>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA22"
+                                    name="inputA22">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA23">Volumen total de agua tratada vertida</label>
+                                <br><br>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA23"
+                                    name="inputA23">
+                            </div>
+                            <div class="col-lg-3">
+                                <label class="formAmb" for="inputA24">Volumen total de agua tratada no vertida</label>
+                                <br><br>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control1" id="inputA24"
+                                    name="inputA24">
+                            </div>
+
+                            <!--ULTIMA FILA-->
+                            <div class="col-lg-6">
+                                <label class="formAmb1" for="inputA25">Cantidad de agua residual descargada al sisteme
+                                    de
+                                    alcantarillado m3</label>
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control" id="inputA25"
+                                    name="inputA25">
+                            </div>
+                            <div class="col-lg-6">
+                                <label class="formAmb1" for="inputA26">Consumo de agua de la institución durante
                                     2012</label>
-                                <input  step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"  title="Solo se permiten numeros y decimales" class="form-control" id="inputA25" name="inputA25">
+                                <input step="any" type="tel" pattern="[0-9]+([\.][0-9]+)?"
+                                    title="Solo se permiten numeros y decimales" class="form-control" id="inputA26"
+                                    name="inputA26">
                             </div>
-                            <button type="submit" class="btn btn-primary d-block mx-auto" >Guardar</button>
+                            <button type="submit" class="btn btn-primary d-block mx-auto">Guardar</button>
 
                         </form>
                         <hr size="20px" color="white" />
@@ -261,129 +295,145 @@
                                                 <th scope="col">Área que ocupa los Rellenos Sanitarios</th>
                                                 <th scope="col">Número de botaderos</th>
                                                 <th scope="col">Área que ocupa botaderos</th>
-                                                <th scope="col" >Total de resisduos Recolectados en ton. en el 2012</th>
-                                                <th scope="col">Total de recolección de residuos sólidos en forma diferenciada</th>
+                                                <th scope="col">Total de resisduos Recolectados en ton. en el 2012</th>
+                                                <th scope="col">Total de recolección de residuos sólidos en forma
+                                                    diferenciada</th>
                                                 <th scope="col">Total de residuos peligrosos en toneladas</th>
                                                 <th scope="col">Total de residuos orgánicos en ton.</th>
                                                 <th scope="col">Total de residuos inorgánicos ton.</th>
                                                 <th scope="col">Total de la cantidad tratada de todos los residuos</th>
-                                                <th scope="col">Cantidad de Residuos Urbanos destinados al Reciclaje</th>
+                                                <th scope="col">Cantidad de Residuos Urbanos destinados al Reciclaje
+                                                </th>
                                                 <th scope="col">Cantidad Total de Residuos Urbanos</th>
-                                                <th scope="col">Total de residuos sólidos y residuos peligrosos tratados</th>
-                                                <th scope="col">Fuentes de captación de agua (agua superficial volumen)</th>
-                                                <th scope="col">Fuentes de captación de agua (agua subterránea volumen)</th>
-                                                <th scope="col">Volumen total de las fuentes de captación de agua superficial y subterránea</th>
-                                                <th scope="col">Volumen bruto de agua dulce provisto para el suministro de agua potable m3</th>
-                                                <th scope="col">Total del Volumen de agua registrada y distribuida por tipo de ususario </th>
+                                                <th scope="col">Total de residuos sólidos y residuos peligrosos tratados
+                                                </th>
+                                                <th scope="col">Fuentes de captación de agua (agua superficial volumen)
+                                                </th>
+                                                <th scope="col">Fuentes de captación de agua (agua subterránea volumen)
+                                                </th>
+                                                <th scope="col">Volumen total de las fuentes de captación de agua
+                                                    superficial y subterránea</th>
+                                                <th scope="col">Volumen bruto de agua dulce provisto para el suministro
+                                                    de
+                                                    agua potable m3</th>
+                                                <th scope="col">Total del Volumen de agua registrada y distribuida por
+                                                    tipo
+                                                    de ususario </th>
                                                 <th scope="col">Cantidad total de agua residual recolectada m3</th>
                                                 <th scope="col">Total agua residual y su tratamiento</th>
                                                 <th scope="col">Número de plantas de tratamiento de agua residual</th>
-                                                <th scope="col">Capacidad del tipo de planta de tratamiento de agua residual</th>
+                                                <th scope="col">Capacidad del tipo de planta de tratamiento de agua
+                                                    residual
+                                                </th>
                                                 <th scope="col">Cantidad total de agua no tratada volumen m3</th>
                                                 <th scope="col">Volumen total de agua tratada vertida</th>
-                                                <th scope="col">Cantidad de agua residual descargada al sisteme de alcantarillado m3</th>
+                                                <th scope="col">Cantidad de agua residual descargada al sisteme de
+                                                    alcantarillado m3</th>
                                                 <th scope="col">Consumo de agua de la institución durante 2012</th>
                                                 <th>action</th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>22</td>
-                                            <td>
-                                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>6</td>
-                                            <td>
-                                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">2</th>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>9</td>
-                                            <td>
-                                                <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i class="fas fa-user-times"></i></a>
-                                            </td>
-                                        </tr>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>22</td>
+                                                <td>
+                                                    <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+                                                            class="fas fa-user-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td>
+                                                    <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+                                                            class="fas fa-user-times"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>9</td>
+                                                <td>
+                                                    <a href="#"><i class="fas fa-edit"></i></a> | <a href="#"><i
+                                                            class="fas fa-user-times"></i></a>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
-        
+
                             </div>
                         </div>
                     </div>
@@ -391,15 +441,17 @@
             </div>
         </div>
     </div>
-             
+
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/646c794df3.js"></script>
     <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>        
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap5.min.js"></script>
 </body>
 
 </html>

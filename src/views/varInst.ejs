@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ext/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/banVariables.css">
+    <title>Variables Institucionales</title>
+    <%- include("partials/head") %>
+</head>
+
+<body>
+    <%- include("partials/navigation") %>
+        <section>
+            <div class="cont_banner">
+                <div class="sombra">
+                    <h1>Variables Institucionales</h1>
+                    <hr />
+                    <p>Estadística de información ambiental económica en gobiernos autónomos descentralizados
+                        municipales</p>
+                </div>
+            </div>
+        </section>
+        <hr />
+
+        <section>
+            <div class="container">
+                <br>
+                <h1 class="tituloIndicador text-center">Seleccionar Variables</h1>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card card-custom1">
+                            <div class="card-body">
+                                <div class="custom-box1">
+                                    <h5 class="card-title1 m-3"
+                                        style="padding-top: 1rem;font-weight:bolder; text-align: center;">
+                                        Variables de Indicador Institucional</h5>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckChecked" checked>
+                                        <label class="form-check-label" for="flexSwitchCheckChecked">Número de
+                                            funcionarios </label>
+                                    </div>
+
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Barrido zonas
+                                            públicas
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Número personas de
+                                            barrido
+                                        </label>
+                                    </div>
+
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Empleados gestion
+                                            ambiental </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Consumo energía
+                                            2012
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Energia electrica
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Combustible Diesel
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Combustible extra
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Combustible super
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Productos
+                                            maderables
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-switch">
+                                        <input style="float:right;" class="form-check-input" type="checkbox"
+                                            role="switch" id="flexSwitchCheckDefault">
+                                        <label class="form-check-label" for="flexSwitchCheckDefault">Total cortes de
+                                            agua al mes
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button
+                                    style=" background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 97.4%);
+                        border-radius: 20px; border-color: black; margin-bottom: 3rem;margin-top: 3rem; font-weight: 500px;"
+                                    class="btn btn-primary " type="button">Calcular</button>
+                            </div>
+
+                            <div class="text-center">
+                                <img style="width: 85%;margin-bottom: 2rem;" class="img-fluid" src="/img/calcu.png"
+                                    alt="Grafica Radial">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card1 card-custom">
+                            <div class="card-body">
+                                <div class="custom-box2" style="display: flex; justify-content: center;"></div>
+                                <h5 class="card-title2 m-3" style="padding-top: 1rem;font-weight:bolder;">
+                                    Aclaraciones</h5>
+                                <p class="diccionario text-align:justify " style="margin: 2rem;">
+                                    Funcionarios que trabajan tiempo completo<br><br>
+                                    Cobertura en km que cubre el servicio de barrido de las zonas públicas<br><br>
+                                    Número de personas dedicadas al servicio de barrido<br><br>
+                                    Número total de empleados que laboraron en trabajo exclusivo en gestión ambiental<br><br>
+                                    Consumo de energía eléctrica 2012 (kWh y valor)<br><br>
+                                    Consumo de energía eléctrica 2012 (kWh y valor) valor<br><br>
+                                    Cantidad de combustible que utilizo la institución: Diesel<br><br>
+                                    Cantidad de combustible que utilizo la institución: Extra<br><br>
+                                    Cantidad de combustible que utilizo la institución: Super<br><br>
+                                    Número de productos maderables que adquirio la institución: Papel<br><br>
+                                    Total de los cortes del servicio de agua potable en el mes<br><br>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+
+
+        <%- include("partials/footer") %>
+</body>
+
+</html>
