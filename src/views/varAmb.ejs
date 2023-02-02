@@ -7,286 +7,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="ext/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Variables</title>
     <link rel="stylesheet" href="css/banVariables.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <title>Calculadora Economía</title>
     <%- include("partials/head") %>
 </head>
 
 <body>
     <%- include("partials/navigation") %>
-        <section>
-            <div class="cont_banner">
-                <div class="sombra">
-                    <h1>Variables Ambientales</h1>
-                    <hr />
-                    <p>Estadística de información ambiental económica en gobiernos autónomos descentralizados
-                        municipales</p>
-                    <div class="cont_banner_link">
-                        <a class="banner_link" href="/calculadora">Indicadores</a>
-                        <a class="banner_link_1" href="/calculadoraVariables">Variables</a>
-                    </div>
-                </div>
+    <section>
+        <div class="cont_banner">
+            <div class="sombra">
+                <h1>Variables</h1>
+                <hr />
+                <p>Estadística de información ambiental económica en gobiernos autónomos descentralizados
+                    municipales</p>
             </div>
-        </section>
-        <hr />
-        <section>
+        </div>
+    </section>
+    <hr />
 
-            <div class="container">
-                <br>
-                <h1 class="tituloIndicador text-center">Seleccionar Variables</h1>
-                <br>
-                <!-- contenedor de la primera columna-->
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card card-custom1">
+    <section>
+        <div class="container">
+            <br>
+            <h1 class="tituloIndicador text-center">Seleccionar Variables</h1>
+            <br>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card card-custom1">
+                        <form action="/varAmb" method="post">
                             <div class="card-body">
                                 <div class="custom-box1">
                                     <h5 class="card-title1 m-3"
                                         style="padding-top: 1rem;font-weight:bolder; text-align: center;">
-                                        Variables</h5>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckChecked" checked>
-                                        <label class="form-check-label" for="flexSwitchCheckChecked">Área rrelleno
-                                            sanitario
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Numero de botaderos
-                                        </label>
-                                    </div>
-
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Área
-                                            botaderos</label>
-                                    </div>
-
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Residuos
-                                            Recolectados 2012 </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Recolección
-                                            residuos solidos
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Residuos peligrosos
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Residuos orgánicos
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Residuos
-                                            inorganicos
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Total residuos
-                                            tratados
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Residuos urbanos
-                                            reciclados
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Cantidad de
-                                            Residuos Urbanos</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Residuos solidos y
-                                            peligrosos
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Fuentes agua
-                                            superficial
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Fuentes agua
-                                            subterranea
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Volumen agua
-                                            superficial y subterranea
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Volumen bruto agua
-                                            dulce
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Total agua
-                                            registrada
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Cantidad agua
-                                            residual recolectada
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Total agua residual
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Tratamiento agua
-                                            residual
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Número de plantas
-                                            residual
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Capacidad planta de
-                                            tratamiento
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Volumen agua
-                                            vertida
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Volumen agua no
-                                            vertida
-                                        </label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Cantidad sistema de
-                                            alcantarillado</label>
-                                    </div>
-                                    <div class="form-check form-switch">
-                                        <input style="float:right;" class="form-check-input" type="checkbox"
-                                            role="switch" id="flexSwitchCheckDefault">
-                                        <label class="form-check-label" for="flexSwitchCheckDefault">Consumo de agua
-                                            institución
-                                        </label>
-                                    </div>
+                                        Variables de Indicador Económico</h5>
+                                    <% for (let i=0; i < variablesIndicadores.length; i++) { %>
+                                        <div class="form-check form-switch">
+                                            <input style="float:right;" class="form-check-input" type="checkbox"
+                                                role="switch" id="<%= variablesIndicadores[i] %>"
+                                                value="<%= variablesIndicadores[i] %>" name="variablesIndicadores[]" <%
+                                                if (selectedVariables.includes(variablesIndicadores[i])) { %> checked
+                                            <% } %>>
+                                                <label class="form-check-label" for="<%= variablesIndicadores[i] %>">
+                                                    <%= variablesIndicadores[i] %>
+                                                </label>
+                                        </div>
+                                        <% } %>
 
                                 </div>
                             </div>
                             <div class="d-grid gap-2 col-6 mx-auto">
-                                <button style=" background: linear-gradient(180deg, rgba(169, 226, 6, 0.9) 0%, rgba(99, 172, 27, 0.8) 97.4%);
-                        border-radius: 20px; border-color: black; margin-bottom: 3rem;margin-top: 3rem; font-weight: 500px;"
-                                    class="btn btn-primary " type="button" >Calcular</button>
+                                <button
+                                    style="background: rgba(34, 34, 7, 0.75);
+                                          border-radius: 20px; border-color: black; margin-bottom: 3rem;margin-top: 3rem;"
+                                    class="btn btn-primary " type="submit">Calcular</button>
                             </div>
+                        </form>
 
-                            <div class="text-center">
-                                <img style="width: 85%;margin-bottom: 2rem;" class="img-fluid" src="/img/calcu.png"
-                                    alt="Grafica de barras">
-                            </div>
+                        <div class="text-center">
+                            <canvas style="margin-top: 2rem; margin-bottom: 2rem;" id="myChart"></canvas>
                         </div>
                     </div>
-                    <!-- Contenido de la segunda columna-->
-                    <div class="col-md-6">
+                </div>
 
-                        <!-- Contenedir de la segunda colunna-->
-                        <div class="card1 card-custom">
-                            <div class="card-body">
-                                <div class="custom-box2" style="display: flex; justify-content: center;">
-                                </div>
-                                <h1 class="card-title2 m-3"
-                                    style="padding-top: 1rem;font-weight:bolder;font-size:30px;  margin-bottom: 7rem;">
-                                    Aclaraciones</h1>
-                                <p class="diccionario text-align:justify" style="margin: 2rem;">
-                                    Área que ocupa los Rellenos Sanitarios<br><br>
-                                    Número de botaderos<br><br>
-                                    Área que ocupa botaderos<br><br>
-                                    Total de residuos Recolectados en ton. en el 2012<br><br>
-                                    Total de recolección de residuos sólidos en forma diferenciada<br><br>
-                                    Total de residuos peligrosos en toneladas<br><br>
-                                    Total de residuos orgánicos en ton.<br><br>
-                                    Total de residuos inorgánicos ton.<br><br>
-                                    Total de la cantidad tratada de todos los residuos<br><br>
-                                    Cantidad de Residuos Urbanos destinados al Reciclaje<br><br>
-                                    Cantidad Total de Residuos Urbanos<br><br>
-                                    Total de residuos sólidos y residuos peligrosos tratados<br><br>
-                                    Fuentes de captación de agua (agua superficial volumen)<br><br>
-                                    Fuentes de captación de agua (agua subterránea volumen)<br><br>
-                                    Volumen total de las fuentes de captación de agua superficial y subterránea<br><br>
-                                    Volumen bruto de agua dulce provisto para el suministro de agua potable m3<br><br>
-                                    Total del Volumen de agua registrada y distribuida por tipo de ususario<br><br>
-                                    Cantidad total de agua residual recolectada m3<br><br>
-                                    Total agua residual y su tratamiento<br><br>
-                                    Número de plantas de tratamiento de agua residual<br><br>
-                                    Capacidad del tipo de planta de tratamiento de agua residual<br><br>
-                                    Cantidad total de agua no tratada volumen m3<br><br>
-                                    Volumen total de agua tratada vertida<br><br>
-                                    Volumen total de agua tratada no vertida<br><br>
-                                    Cantidad de agua residual descargada al sisteme de alcantarillado m3<br><br>
-                                    Consumo de agua de la institución durante 2012<br><br>
-                                </p>
-                            </div>
+                <div class="col-md-6">
+                    <div class="card1 card-custom">
+                        <div class="card-body">
+                            <div class="custom-box2" style="display: flex; justify-content: center;"></div>
+                            <h5 class="card-title2 m-3" style="padding-top: 1rem;font-weight:bolder;">
+                                Instrucciones y Aclaraciones</h5>
+                            <p class="diccionario text-align:justify " style="margin: 2rem;">
+                                Presupuesto Anual (para planes de sensibilización)<br><br>
+                                Monto recaudado del cobro por la recolección de residuos residencial <br><br>
+                                Total del monto recaudado por el cobro de recoleccion de residuos residencial e
+                                industrial <br><br>
+                                Presupuesto anual para campañas de conservación de las fuentes de captación de
+                                agua<br><br>
+                                Ingresos provenientes de: Recursos fiscales generados por instituciones de valor
+                                <br><br>
+                                Ingresos provenientes de: Recursos de preasignaciones valor <br><br>
+                                Ingresos provenientes de: Recursos de crédito internos valor <br><br>
+                                Ingresos provenientes de: Asistencia técnica y donacionaciones valor <br><br>
+                                Ingresos provenientes de: Anticipos de ejercicios anteriores valor <br><br>
+                                Total de ingresos recibidos <br><br>
+                                Ingresos para protección ambiental provenientes de: Recursos fiscales generados por
+                                la institución<br><br>
+                                Ingresos para protección ambiental provenientes de: Recursos provenientes de
+                                preasignaciones valor<br><br>
+                                Total del ingresos recibido para protección ambiental <br><br>
+
+                            </p>
                         </div>
-
-
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <%- include("partials/footer") %>
+    <hr />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+
+    <script>
+        var grafica = <%-JSON.stringify(graficaVariables) %>;
+        var labelsIndicadores = <%- JSON.stringify(labelsVariables) %>;
+        var ctx = document.getElementById("myChart").getContext("2d");
+        var myChart = new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: labelsIndicadores,
+                datasets: [
+                    {
+                        data: grafica,
+                        backgroundColor: [
+                            "#ff6384",
+                            "#36a2eb",
+                            "#ffce56",
+                            "#90EE90",
+                            "#8B008B",
+                            "#006400",
+                            "#8FBC8F",
+                            "#00FFFF",
+                            "#00FF7F",
+                            "#00BFFF",
+                            "#1E90FF",
+                            "#228B22",
+                            "#00FF00",
+                            "#00CED1",
+                            "#2F4F4F",
+                            "#008080",
+                            "#B0E0E6",
+                            "#ADD8E6",
+                            "#87CEFA",
+                            "#778899",
+                            "#708090",
+                            "#4682B4",
+                            "#000080",
+                            "#4169E1",
+                            "#6495ED",
+                            "#B0C4DE",
+                        ],
+                        borderColor: "#333",
+                        borderWidth: 1,
+                    },
+                ],
+            },
+            options: {
+                title: {
+                    display: true,
+                    text: "Título de la gráfica",
+                    fontSize: 20,
+                    fontColor: "#333",
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true,
+                },
+                legend: {
+                    display: false,
+                },
+                scales: {
+                    yAxes: [
+                        {
+                            ticks: {
+                                beginAtZero: true,
+                            },
+                        },
+                    ],
+                },
+            },
+        });
+        </script>
+
+    </script>
+
+
+
+    <%- include("partials/footer") %>
 </body>
 
 </html>

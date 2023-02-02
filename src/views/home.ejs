@@ -56,7 +56,7 @@
                         <a data-aos="fade-up" href="#" class="btn btn-secondary btn-md">Visita nuestra página</a>
                     </div>
                 </div>
-            </dvi>
+                </dvi>
         </section>
 
         <section>
@@ -88,14 +88,16 @@
         <section id="section1">
             <div class="cont_banner_sec_3">
                 <div class="container">
-                    <div class="row">
+                    <form class="row" action="/submit" method="post">
                         <div class="col-md-4 cont_img  text-center">
                             <div>
                                 <h3>Municipio</h3>
                                 <select name="selectMun" id="municipios">
-                                    <option>...</option>
-                                    <option value="opcion1">Loja</option>
-                                    <option value="opcion2">Puerto baquerizo</option>
+                                    <% tareas.forEach(function(tarea) { %>
+                                        <option value="<%= tarea.municipio %>">
+                                            <%= tarea.municipio %>
+                                        </option>
+                                    <% }); %>
                                 </select>
                             </div>
                             <br>
@@ -103,9 +105,12 @@
                             <div>
                                 <h3>Año</h3>
                                 <select name="selectAño" id="año">
-                                    <option>...</option>
-                                    <option value="optionA1">2019</option>
-                                    <option value="optionA2">2019</option>
+                                    <%let años=new Set(); tareas.forEach(function(tarea) { años.add(tarea.Anio); });
+                                        años.forEach(function(año) { %>
+                                        <option value="<%= año %>">
+                                            <%= año %>
+                                        </option>
+                                        <% }); %>
                                 </select>
                             </div>
                         </div>
@@ -114,15 +119,15 @@
                             <p>Componentes económico, social, ambiental e institucional que miden la gestión ambiental.
                             </p>
                             <img src="../img/SliderMoney.png" style="width:150px;height:150px; " alt="Imagen 1">
-                            <a class="btn btn-secondary btn-md" href="/indicadores">Ver indicadores</a>
+                            <button class="btn btn-secondary btn-md" type="submit" name="submit" value="submit1">Ver indicadores </button>
                         </div>
                         <div class="col-md-4 cont_img  text-center">
                             <h2>Variables</h2>
                             <p>Factores que inciden en los componentes y precisar la medida de la gestión ambiental.</p>
                             <img src="../img/SliderDerecha.png" style="width:150px;height:150px; " alt="Imagen 1">
-                            <a class="btn btn-secondary btn-md" href="/indicadores#sectionVariables">Ver variables</a>
+                            <button class="btn btn-secondary btn-md" type="submit" name="submit" value="submit2" href="/indicadores#sectionVariables">Ver variables </button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -185,20 +190,20 @@
                     <div class="col-md-4">
                         <img data-aos="fade-left" src="../img/inec.png" style="width:320px;height:150px;"
                             class="img-fluid" alt="diseño arquitectonico">
-                            <br>
+                        <br>
                         <a href="https://www.ecuadorencifras.gob.ec/institucional/home/">Instituto Nacional de
                             Estadística y Censos</a>
                     </div>
                     <div class="col-md-4">
                         <img data-aos="fade-up-right" src="../img/bde.png" style="width:320px;height:150px;" class="
                             img-fluid" alt="diseño arquitectonico">
-                            <br>
+                        <br>
                         <a href="https://bde.fin.ec/">Banco de Desarrollo del Ecuador B.P</a>
                     </div>
                     <div class="col-md-4">
                         <img data-aos="fade-up-left" src="../img/ame.png" style="width:320px;height:150px;" class="
                             img-fluid" alt="diseño arquitectonico">
-                            <br>
+                        <br>
                         <a href="https://ame.gob.ec/">Asociación de Municipalidades Ecuatorianas</a>
 
                     </div>

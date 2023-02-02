@@ -11,12 +11,12 @@
 
 <body>
     <div class="contenedorRegister">
-        <form class="form-group" action="/register"  onsubmit="return validatePassword()">
+        <form class="form-group" action="/register" method="post" onsubmit="return validatePassword()">
             <h1>Syscalc.ec</h1>
             <label for="" aria-required="true">Nombre completo </label>
-            <input type="text" name="name" id="nombre" class="form-control" placeholder="Apellidos y Nombres" required>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Apellidos y Nombres" required>
             <label for="">Dirección de correo electrónico</label>
-            <input type="email" name="email" id="correo" class="form-control" placeholder="Correo institucional"
+            <input type="email" name="email" id="email" class="form-control" placeholder="Correo institucional"
                 required>
             <p>Una dirección de correo electrónico institucional válido. Todos los correos del sistema se enviaran a
                 esta dirección.</p>
